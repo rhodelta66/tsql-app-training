@@ -1,18 +1,18 @@
 {
-    "generation_timestamp": "2025-05-24T22:00:04.413856",
+    "generation_timestamp": "2025-05-25T00:38:11.535097",
     "total_framework_objects": 476,
     "objects_with_embedded_examples": 110,
     "objects_with_embedded_descriptions": 0,
     "training_generation_status": "success",
-    "objects_with_real_usage_examples": 93,
-    "total_action_scripts_in_corpus": 400,
+    "objects_with_real_usage_examples": 142,
+    "total_action_scripts_in_corpus": 742,
     "action_scripts_analyzed_in_detail_sample": 20,
     "total_schema_tables_processed_for_discovery": 2,
     "params_total_in_api": 1735,
     "params_parsed_with_defaults_from_def": 1202,
     "params_with_type_from_def": 1725,
     "metadata": {
-        "last_updated": "2025-05-24T22:00:04.498731",
+        "last_updated": "2025-05-25T00:38:11.758847",
         "source": "script_save"
     }
 }

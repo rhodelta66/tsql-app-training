@@ -4,6 +4,7 @@ import pyodbc
 import json
 import os
 import re
+import sys
 from dotenv import load_dotenv
 import argparse
 from datetime import datetime
@@ -482,19 +483,37 @@ def get_framework_objects_info(framework_object_name_patterns, local_args):
 def get_action_scripts_source(table_name, sql_column_name_options, local_args, id_col_name='id', name_col_name='name', max_scripts=50):
     actual_cols_info = get_actual_columns_for_table('dbo', table_name, local_args)
     if not actual_cols_info: return []
+    
+    # Get column names in original case
     sql_col_to_use_original_case = next((c['name'] for option in sql_column_name_options for c in actual_cols_info if c['name'].lower() == option.lower()), None)
     if not sql_col_to_use_original_case: return []
+    
     select_spec = [(sql_col_to_use_original_case, 'sql_source')]
     id_col_original_case = next((c['name'] for c in actual_cols_info if c['name'].lower() == id_col_name.lower()), None)
     if id_col_original_case: select_spec.append((id_col_original_case, 'action_id'))
     name_col_original_case = next((c['name'] for c in actual_cols_info if c['name'].lower() == name_col_name.lower()), None)
     if name_col_original_case: select_spec.append((name_col_original_case, 'action_name'))
+    
+    # Add action column to filter
+    action_col_original_case = next((c['name'] for c in actual_cols_info if c['name'].lower() == 'action'.lower()), None)
+    if action_col_original_case: select_spec.append((action_col_original_case, 'action'))
+    
+    # Build where clause for action type filtering
+    where_clause = f"[{action_col_original_case}] = 'stored_procedure'" if action_col_original_case else None
+    
     order_by = f"[{id_col_original_case}] DESC" if id_col_original_case else ""
-    query, _ = build_safe_select_query('dbo', table_name, select_spec, local_args, order_by_clause=order_by, top_n=max_scripts)
+    query, _ = build_safe_select_query('dbo', table_name, select_spec, local_args, 
+                                     where_clause=where_clause, 
+                                     order_by_clause=order_by, 
+                                     top_n=max_scripts)
+    
     if not query: return []
     scripts = execute_query(query)
     if scripts:
-        for script in scripts: script['source_table'] = table_name
+        for script in scripts: 
+            script['source_table'] = table_name
+            # Remove action column from results since we don't need it anymore
+            if 'action' in script: del script['action']
     return scripts if scripts else []
 
 
@@ -639,6 +658,8 @@ def generate_simple_training_examples(framework_api_details, output_filename="si
 # --- Main Execution ---
 if __name__ == "__main__":
     script_args_global = parser.parse_args()
+    # Initialize original stdout for redirection
+    original_stdout = sys.stdout
     if script_args_global.force_full_rediscover:
         script_args_global.rediscover_schema = True
         script_args_global.rediscover_api = True
@@ -690,15 +711,22 @@ if __name__ == "__main__":
             current_framework_api_for_test = get_framework_objects_info(patterns_for_test, script_args_global)
         id_col_name, sql_col_options = 'id', ['unparsed_sql', 'sql_script']
         actual_cols_info_test = get_actual_columns_for_table('dbo', script_args_global.test_action_script_table, script_args_global)
-        if not actual_cols_info_test: print(f"Table {script_args_global.test_action_script_table} not found. Exiting."); exit()
+        if not actual_cols_info_test: 
+            print(f"Table {script_args_global.test_action_script_table} not found. Exiting.")
+            exit()
         id_col_actual_test = next((c['name'] for c in actual_cols_info_test if c['name'].lower() == id_col_name.lower()), None)
         sql_col_actual_test = next((c['name'] for option in sql_col_options for c in actual_cols_info_test if c['name'].lower() == option.lower()), None)
-        if not id_col_actual_test or not sql_col_actual_test: print(f"Required columns not in {script_args_global.test_action_script_table}. Exiting."); exit()
+        if not id_col_actual_test or not sql_col_actual_test: 
+            print(f"Required columns not in {script_args_global.test_action_script_table}. Exiting.")
+            exit()
         select_spec_test = [(sql_col_actual_test, 'sql_source'), (id_col_actual_test, 'action_id')]
         name_col_actual_test = next((c['name'] for c in actual_cols_info_test if c['name'].lower() == 'name'), None)
-        if name_col_actual_test: select_spec_test.append((name_col_actual_test, 'action_name'))
+        if name_col_actual_test: 
+            select_spec_test.append((name_col_actual_test, 'action_name'))
         query_test, _ = build_safe_select_query('dbo', script_args_global.test_action_script_table, select_spec_test, script_args_global, where_clause=f"[{id_col_actual_test}] = ?")
-        if not query_test: print(f"Could not build query for specific action script. Exiting."); exit()
+        if not query_test: 
+            print(f"Could not build query for specific action script. Exiting.")
+            exit()
         script_info_test = execute_query(query_test, (script_args_global.test_action_script_id,), fetch_one=True)
         if script_info_test and script_info_test.get('sql_source'):
             print(f"\n--- Action Script Source (ID: {script_info_test.get('action_id')}, Name: {script_info_test.get('action_name','N/A')}) ---\n{script_info_test['sql_source']}\n{'-'*30}")
@@ -752,11 +780,11 @@ if __name__ == "__main__":
         if TRAINING_AVAILABLE:
             try:
                 print("\nFRAMEWORK_TRAINING: Starting training data generation...")
-                    
-                    # If testing a specific procedure, print its details
-                    if script_args_global.test_sp:
-                        print(f"\n=== TESTING PROCEDURE: {script_args_global.test_sp} ===")
-                        test_procedure(current_framework_api, script_args_global.test_sp)
+                
+                # If testing a specific procedure, print its details
+                if script_args_global.test_sp:
+                    print(f"\n=== TESTING PROCEDURE: {script_args_global.test_sp} ===")
+                    test_procedure(current_framework_api, script_args_global.test_sp)
                 else:
                     print("INFO: Skipping training material generation as module is not available")
                 
@@ -765,17 +793,14 @@ if __name__ == "__main__":
                 print("\nFRAMEWORK_TRAINING: All files saved to 'training_output/' directory")
                 print("Training generation output has been saved to training_output/training_generation_output.txt")
             
+            except Exception as e:
+                print(f"FRAMEWORK_TRAINING: Error generating training materials: {e}")
+                raise
             finally:
                 # Ensure original stdout is restored even if there's an error
                 sys.stdout = original_stdout
                 if 'output_file' in locals():
                     output_file.close()
-            
-        except Exception as e:
-            print(f"FRAMEWORK_TRAINING: Error generating training materials: {e}")
-            raise
-        except Exception as e:
-            print(f"FRAMEWORK_TRAINING: Error generating training materials: {e}")
 
     generate_simple_training_examples(current_framework_api, "simple_training_examples.json")
     current_run_summary = {"generation_timestamp": datetime.now().isoformat(), "total_framework_objects": len(current_framework_api or []),
