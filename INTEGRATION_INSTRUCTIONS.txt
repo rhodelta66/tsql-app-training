@@ -1,0 +1,36 @@
+# ================================================================
+# INTEGRATION INSTRUCTIONS
+# ================================================================
+
+# 1. Add this import to the top of metadata_explorer_final.py:
+
+try:
+    from framework_training import generate_all_training_materials
+    TRAINING_AVAILABLE = True
+    print("INFO: Framework training module loaded successfully")
+except ImportError as e:
+    TRAINING_AVAILABLE = False
+    print(f"INFO: Framework training module not available: {e}")
+
+# 2. Add this code after your co-occurrence stats update:
+
+# Generate framework training materials
+if TRAINING_AVAILABLE and current_framework_api and current_action_script_corpus:
+    try:
+        print(f"\nFRAMEWORK_TRAINING: Starting training data generation...")
+        
+        training_results = generate_all_training_materials(
+            current_framework_api, 
+            current_action_script_corpus,
+            output_dir="training_output"
+        )
+        
+        print(f"\nFRAMEWORK_TRAINING: All files saved to 'training_output/' directory")
+        
+    except Exception as e:
+        print(f"FRAMEWORK_TRAINING: Error generating training materials: {e}")
+
+# 3. Run your script:
+#    python metadata_explorer_final.py
+
+# 4. Check the generated files in the training_output/ folder

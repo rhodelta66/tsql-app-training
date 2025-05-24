@@ -1,0 +1,213 @@
+{
+    "metadata": {
+        "source": "db_demand_full_run",
+        "last_updated": "2025-05-24T21:36:44.222495"
+    },
+    "tables": {
+        "dbo.api_card_actions": {
+            "exists": true,
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "int",
+                    "length": 10
+                },
+                {
+                    "name": "name",
+                    "type": "nvarchar",
+                    "length": 128
+                },
+                {
+                    "name": "keycode",
+                    "type": "nvarchar",
+                    "length": 128
+                },
+                {
+                    "name": "sql",
+                    "type": "nvarchar",
+                    "length": -1
+                },
+                {
+                    "name": "card_id",
+                    "type": "int",
+                    "length": 10
+                },
+                {
+                    "name": "action",
+                    "type": "nvarchar",
+                    "length": 128
+                },
+                {
+                    "name": "params",
+                    "type": "nvarchar",
+                    "length": -1
+                },
+                {
+                    "name": "action_id",
+                    "type": "int",
+                    "length": 10
+                },
+                {
+                    "name": "role",
+                    "type": "nvarchar",
+                    "length": 128
+                },
+                {
+                    "name": "action_order",
+                    "type": "int",
+                    "length": 10
+                },
+                {
+                    "name": "group_id",
+                    "type": "int",
+                    "length": 10
+                },
+                {
+                    "name": "type",
+                    "type": "nvarchar",
+                    "length": 128
+                },
+                {
+                    "name": "unparsed_sql",
+                    "type": "nvarchar",
+                    "length": -1
+                },
+                {
+                    "name": "pre_declare",
+                    "type": "nvarchar",
+                    "length": -1
+                },
+                {
+                    "name": "error",
+                    "type": "nvarchar",
+                    "length": -1
+                },
+                {
+                    "name": "master_card_action_id",
+                    "type": "int",
+                    "length": 10
+                },
+                {
+                    "name": "disabled",
+                    "type": "bit",
+                    "length": null
+                },
+                {
+                    "name": "display_name",
+                    "type": "nvarchar",
+                    "length": 128
+                },
+                {
+                    "name": "allow_cursor_outside_selection",
+                    "type": "bit",
+                    "length": null
+                },
+                {
+                    "name": "deny_role",
+                    "type": "nvarchar",
+                    "length": 128
+                }
+            ]
+        },
+        "dbo.api_actions": {
+            "exists": true,
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "int",
+                    "length": 10
+                },
+                {
+                    "name": "name",
+                    "type": "nvarchar",
+                    "length": 128
+                },
+                {
+                    "name": "type",
+                    "type": "nvarchar",
+                    "length": 128
+                },
+                {
+                    "name": "sql",
+                    "type": "nvarchar",
+                    "length": -1
+                },
+                {
+                    "name": "from_main_db",
+                    "type": "nvarchar",
+                    "length": 128
+                },
+                {
+                    "name": "keycode",
+                    "type": "nvarchar",
+                    "length": 128
+                },
+                {
+                    "name": "action",
+                    "type": "nvarchar",
+                    "length": 128
+                },
+                {
+                    "name": "params",
+                    "type": "nvarchar",
+                    "length": -1
+                },
+                {
+                    "name": "role",
+                    "type": "nvarchar",
+                    "length": 128
+                },
+                {
+                    "name": "action_order",
+                    "type": "int",
+                    "length": 10
+                },
+                {
+                    "name": "global",
+                    "type": "bit",
+                    "length": null
+                },
+                {
+                    "name": "group_id",
+                    "type": "int",
+                    "length": 10
+                },
+                {
+                    "name": "unparsed_sql",
+                    "type": "nvarchar",
+                    "length": -1
+                },
+                {
+                    "name": "pre_declare",
+                    "type": "nvarchar",
+                    "length": -1
+                },
+                {
+                    "name": "disabled",
+                    "type": "bit",
+                    "length": null
+                },
+                {
+                    "name": "display_name",
+                    "type": "nvarchar",
+                    "length": 128
+                },
+                {
+                    "name": "allow_cursor_outside_selection",
+                    "type": "bit",
+                    "length": null
+                },
+                {
+                    "name": "error",
+                    "type": "nvarchar",
+                    "length": 4000
+                },
+                {
+                    "name": "deny_role",
+                    "type": "nvarchar",
+                    "length": 128
+                }
+            ]
+        }
+    }
+}

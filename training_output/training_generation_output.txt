@@ -1,0 +1,10 @@
+
+FRAMEWORK_TRAINING: Generating training materials...
+
+FRAMEWORK_TRAINING: Generating training materials...
+PATTERN_ANALYSIS: Analyzing existing scripts for synthesis patterns...
+PATTERN_ANALYSIS: Extracted 8 structural patterns
+PATTERN_ANALYSIS: Found 83 parameter patterns
+PATTERN_ANALYSIS: Complexity distribution: {'simple': 235, 'medium': 67, 'complex': 49}
+
+=== GENERATING COMPREHENSIVE TRAINING MATERIALS ===

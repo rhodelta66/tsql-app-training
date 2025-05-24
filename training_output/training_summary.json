@@ -1,0 +1,14 @@
+{
+    "generation_date": "2025-05-24T21:44:07.554052",
+    "summary": {
+        "usage_patterns_found": 3,
+        "training_examples_generated": 3,
+        "procedures_analyzed": 468
+    },
+    "files_generated": [
+        "framework_usage_patterns.json",
+        "procedure_relationships.json",
+        "training_examples.json",
+        "training_summary.json"
+    ]
+}

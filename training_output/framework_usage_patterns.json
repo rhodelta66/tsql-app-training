@@ -1,0 +1,1132 @@
+{
+    "metadata": {
+        "analysis_date": "2025-05-24T21:44:07.492715",
+        "scripts_analyzed": 400,
+        "framework_procedures_available": 468
+    },
+    "patterns": [
+        {
+            "signature": "single_call",
+            "description": "Single framework procedure call",
+            "occurrence_count": 67,
+            "examples": [
+                {
+                    "script_id": 12,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_toast",
+                            "short_name": "sp_api_toast"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 2
+                },
+                {
+                    "script_id": 14,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_modal_text",
+                            "short_name": "sp_api_modal_text"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 47,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_foreach_id",
+                            "short_name": "sp_api_foreach_id"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 92,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_goto",
+                            "short_name": "sp_api_goto"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 93,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_toast",
+                            "short_name": "sp_api_toast"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 142,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_modal_post",
+                            "short_name": "sp_api_modal_post"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 146,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_goto",
+                            "short_name": "sp_api_goto"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 160,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_toast",
+                            "short_name": "sp_api_toast"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 3
+                },
+                {
+                    "script_id": 161,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_modal_alert",
+                            "short_name": "sp_api_modal_alert"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 2
+                },
+                {
+                    "script_id": 172,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_goto",
+                            "short_name": "sp_api_goto"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 208,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_toast",
+                            "short_name": "sp_api_toast"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 6
+                },
+                {
+                    "script_id": 212,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_modal_text",
+                            "short_name": "sp_api_modal_text"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 213,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_modal_text",
+                            "short_name": "sp_api_modal_text"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 244,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_card_import_csv",
+                            "short_name": "sp_api_card_import_csv"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 250,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_toast",
+                            "short_name": "sp_api_toast"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 263,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_goto",
+                            "short_name": "sp_api_goto"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 2,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_goto",
+                            "short_name": "sp_api_goto"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 6,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_goto",
+                            "short_name": "sp_api_goto"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 10,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_sys_choose_columns",
+                            "short_name": "sp_sys_choose_columns"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 17,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_goto",
+                            "short_name": "sp_api_goto"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 20,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_toast",
+                            "short_name": "sp_api_toast"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 21,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_toast",
+                            "short_name": "sp_api_toast"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 23,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_goto",
+                            "short_name": "sp_api_goto"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 25,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_sys_find_fields",
+                            "short_name": "sp_sys_find_fields"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 26,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_goto",
+                            "short_name": "sp_api_goto"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 37,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_toast",
+                            "short_name": "sp_api_toast"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 39,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_sys_pick_from_list",
+                            "short_name": "sp_sys_pick_from_list"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 41,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_goto",
+                            "short_name": "sp_api_goto"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 42,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_goto",
+                            "short_name": "sp_api_goto"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 48,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_sys_card_help",
+                            "short_name": "sp_sys_card_help"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 52,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_sys_convert_field_to_select",
+                            "short_name": "sp_sys_convert_field_to_select"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 55,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_sys_delete",
+                            "short_name": "sp_sys_delete"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 56,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_toast",
+                            "short_name": "sp_api_toast"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 57,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_sys_edit_fields",
+                            "short_name": "sp_sys_edit_fields"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 59,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_sys_escape",
+                            "short_name": "sp_sys_escape"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 63,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_modal_alert",
+                            "short_name": "sp_api_modal_alert"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 67,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_sys_model_diff",
+                            "short_name": "sp_sys_model_diff"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 69,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_sys_menu_quick",
+                            "short_name": "sp_sys_menu_quick"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 70,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_sys_refresh_all_views",
+                            "short_name": "sp_sys_refresh_all_views"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 75,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_sys_table_size",
+                            "short_name": "sp_sys_table_size"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 76,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_sys_translate",
+                            "short_name": "sp_sys_translate"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 77,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_sys_workflow",
+                            "short_name": "sp_sys_workflow"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 86,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_goto",
+                            "short_name": "sp_api_goto"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 89,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_goto",
+                            "short_name": "sp_api_goto"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 92,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_sys_search_all",
+                            "short_name": "sp_sys_search_all"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 93,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_modal_alert",
+                            "short_name": "sp_api_modal_alert"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 95,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_sys_gui_insert",
+                            "short_name": "sp_sys_gui_insert"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 99,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_sys_list_editable",
+                            "short_name": "sp_sys_list_editable"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 103,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_modal_route",
+                            "short_name": "sp_api_modal_route"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 124,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_modal_text",
+                            "short_name": "sp_api_modal_text"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 2
+                },
+                {
+                    "script_id": 144,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_sys_edit_actions",
+                            "short_name": "sp_sys_edit_actions"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 159,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_goto",
+                            "short_name": "sp_api_goto"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 212,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_toast",
+                            "short_name": "sp_api_toast"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 220,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_broker_request",
+                            "short_name": "sp_api_broker_request"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 255,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_sys_toggle_isam_search",
+                            "short_name": "sp_sys_toggle_isam_search"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 256,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_sys_view_performance",
+                            "short_name": "sp_sys_view_performance"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 262,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_sys_file_upload",
+                            "short_name": "sp_sys_file_upload"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 266,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_add_column",
+                            "short_name": "sp_api_add_column"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 267,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_add_table",
+                            "short_name": "sp_api_add_table"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 268,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_sys_file_download",
+                            "short_name": "sp_sys_file_download"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 272,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_modal_alert",
+                            "short_name": "sp_api_modal_alert"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 274,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_modal_text",
+                            "short_name": "sp_api_modal_text"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 276,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_sys_parent_cards",
+                            "short_name": "sp_sys_parent_cards"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 277,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_sys_convert_to_type_table",
+                            "short_name": "sp_sys_convert_to_type_table"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 278,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_sys_edit_attributes",
+                            "short_name": "sp_sys_edit_attributes"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 279,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_sys_list_classes",
+                            "short_name": "sp_sys_list_classes"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 280,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_sys_insert_todo",
+                            "short_name": "sp_sys_insert_todo"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                }
+            ],
+            "common_procedures": {
+                "dbo.sp_api_toast": 10,
+                "dbo.sp_api_modal_text": 5,
+                "dbo.sp_api_foreach_id": 1,
+                "dbo.sp_api_goto": 14,
+                "dbo.sp_api_modal_post": 1,
+                "dbo.sp_api_modal_alert": 4,
+                "dbo.sp_api_card_import_csv": 1,
+                "dbo.sp_sys_choose_columns": 1,
+                "dbo.sp_sys_find_fields": 1,
+                "dbo.sp_sys_pick_from_list": 1,
+                "dbo.sp_sys_card_help": 1,
+                "dbo.sp_sys_convert_field_to_select": 1,
+                "dbo.sp_sys_delete": 1,
+                "dbo.sp_sys_edit_fields": 1,
+                "dbo.sp_sys_escape": 1,
+                "dbo.sp_sys_model_diff": 1,
+                "dbo.sp_sys_menu_quick": 1,
+                "dbo.sp_sys_refresh_all_views": 1,
+                "dbo.sp_sys_table_size": 1,
+                "dbo.sp_sys_translate": 1,
+                "dbo.sp_sys_workflow": 1,
+                "dbo.sp_sys_search_all": 1,
+                "dbo.sp_sys_gui_insert": 1,
+                "dbo.sp_sys_list_editable": 1,
+                "dbo.sp_api_modal_route": 1,
+                "dbo.sp_sys_edit_actions": 1,
+                "dbo.sp_api_broker_request": 1,
+                "dbo.sp_sys_toggle_isam_search": 1,
+                "dbo.sp_sys_view_performance": 1,
+                "dbo.sp_sys_file_upload": 1,
+                "dbo.sp_api_add_column": 1,
+                "dbo.sp_api_add_table": 1,
+                "dbo.sp_sys_file_download": 1,
+                "dbo.sp_sys_parent_cards": 1,
+                "dbo.sp_sys_convert_to_type_table": 1,
+                "dbo.sp_sys_edit_attributes": 1,
+                "dbo.sp_sys_list_classes": 1,
+                "dbo.sp_sys_insert_todo": 1
+            },
+            "average_complexity": 1.1492537313432836
+        },
+        {
+            "signature": "single_call_with_validation",
+            "description": "Single framework procedure call with validation",
+            "occurrence_count": 6,
+            "examples": [
+                {
+                    "script_id": 83,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_modal_text",
+                            "short_name": "sp_api_modal_text"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": true,
+                    "complexity_score": 5
+                },
+                {
+                    "script_id": 158,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_modal_text",
+                            "short_name": "sp_api_modal_text"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": true,
+                    "complexity_score": 4
+                },
+                {
+                    "script_id": 237,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_modal_modal",
+                            "short_name": "sp_api_modal_modal"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": true,
+                    "complexity_score": 3
+                },
+                {
+                    "script_id": 15,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_modal_modal",
+                            "short_name": "sp_api_modal_modal"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": true,
+                    "complexity_score": 23
+                },
+                {
+                    "script_id": 253,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_modal_text",
+                            "short_name": "sp_api_modal_text"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": true,
+                    "complexity_score": 4
+                },
+                {
+                    "script_id": 271,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_modal_modal",
+                            "short_name": "sp_api_modal_modal"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": false,
+                    "has_transactions": false,
+                    "has_validation": true,
+                    "complexity_score": 3
+                }
+            ],
+            "common_procedures": {
+                "dbo.sp_api_modal_text": 3,
+                "dbo.sp_api_modal_modal": 3
+            },
+            "average_complexity": 7.0
+        },
+        {
+            "signature": "single_call_with_error_handling",
+            "description": "Single framework procedure call with error handling",
+            "occurrence_count": 2,
+            "examples": [
+                {
+                    "script_id": 150,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_modal_text",
+                            "short_name": "sp_api_modal_text"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": true,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                },
+                {
+                    "script_id": 113,
+                    "framework_calls": [
+                        {
+                            "procedure": "dbo.sp_api_modal_text",
+                            "short_name": "sp_api_modal_text"
+                        }
+                    ],
+                    "call_count": 1,
+                    "has_error_handling": true,
+                    "has_transactions": false,
+                    "has_validation": false,
+                    "complexity_score": 1
+                }
+            ],
+            "common_procedures": {
+                "dbo.sp_api_modal_text": 2
+            },
+            "average_complexity": 1.0
+        }
+    ],
+    "pattern_summary": {},
+    "common_practices": []
+}

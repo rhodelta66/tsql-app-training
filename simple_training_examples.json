@@ -1,0 +1,42 @@
+{
+    "created_date": "2025-05-24T22:00:04.412744",
+    "total_examples": 5,
+    "description": "Simple training examples for TSQL.APP framework procedures",
+    "examples": [
+        {
+            "example_number": 1,
+            "procedure_name": "dbo.sp_api_action_as_stored_procedure",
+            "description": "Simple example showing how to call sp_api_action_as_stored_procedure",
+            "sql_script": "-- Example 1: How to use sp_api_action_as_stored_procedure\n\n-- Declare parameters\nDECLARE @actions_id int = 123;\nDECLARE @test bit = 1;\nDECLARE @error nvarchar = N'sample value';\n\n-- Call the procedure\nEXEC dbo.sp_api_action_as_stored_procedure @actions_id = @actions_id, @test = @test, @error = @error;",
+            "learning_goal": "Learn basic usage of sp_api_action_as_stored_procedure"
+        },
+        {
+            "example_number": 2,
+            "procedure_name": "dbo.sp_api_action_to_slaves",
+            "description": "Simple example showing how to call sp_api_action_to_slaves",
+            "sql_script": "-- Example 2: How to use sp_api_action_to_slaves\n\n-- Declare parameters\nDECLARE @action_id int = 123;\n\n-- Call the procedure\nEXEC dbo.sp_api_action_to_slaves @action_id = @action_id;",
+            "learning_goal": "Learn basic usage of sp_api_action_to_slaves"
+        },
+        {
+            "example_number": 3,
+            "procedure_name": "dbo.sp_api_actions_execute_main",
+            "description": "Simple example showing how to call sp_api_actions_execute_main",
+            "sql_script": "-- Example 3: How to use sp_api_actions_execute_main\n\n-- Declare parameters\nDECLARE @api_actions_id int = 123;\nDECLARE @card_name nvarchar = N'Sample Name';\n\n-- Call the procedure\nEXEC dbo.sp_api_actions_execute_main @api_actions_id = @api_actions_id, @card_name = @card_name;",
+            "learning_goal": "Learn basic usage of sp_api_actions_execute_main"
+        },
+        {
+            "example_number": 4,
+            "procedure_name": "dbo.sp_api_add_column",
+            "description": "Simple example showing how to call sp_api_add_column",
+            "sql_script": "-- Example 4: How to use sp_api_add_column\n\n-- Declare parameters\nDECLARE @table_name nvarchar = N'Sample Name';\nDECLARE @card_id int = 123;\n\n-- Call the procedure\nEXEC dbo.sp_api_add_column @table_name = @table_name, @card_id = @card_id;",
+            "learning_goal": "Learn basic usage of sp_api_add_column"
+        },
+        {
+            "example_number": 5,
+            "procedure_name": "dbo.sp_api_add_column_to_view",
+            "description": "Simple example showing how to call sp_api_add_column_to_view",
+            "sql_script": "-- Example 5: How to use sp_api_add_column_to_view\n\n-- Declare parameters\nDECLARE @card_id int = 123;\nDECLARE @new_column nvarchar = N'sample value';\n\n-- Call the procedure\nEXEC dbo.sp_api_add_column_to_view @card_id = @card_id, @new_column = @new_column;",
+            "learning_goal": "Learn basic usage of sp_api_add_column_to_view"
+        }
+    ]
+}

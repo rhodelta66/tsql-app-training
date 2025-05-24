@@ -1,0 +1,41 @@
+{
+    "procedure_relationships": {
+        "sp_api_modal_clear": {
+            "description": "Procedure to clear the modal dialog",
+            "notes": [
+                "This procedure is commonly used after any modal operation",
+                "It does not have a specific relationship with any other modal procedure",
+                "It is a standalone utility function for modal cleanup"
+            ],
+            "related_procedures": {
+                "sp_api_modal_alert": {
+                    "relationship_type": "utility",
+                    "description": "Commonly used after alerts to clean up the modal",
+                    "notes": [
+                        "This is a utility relationship, not a functional dependency",
+                        "The clear operation is independent of the alert content"
+                    ]
+                }
+            }
+        },
+        "sp_api_modal_alert": {
+            "description": "Procedure to show alert messages in a modal dialog",
+            "notes": [
+                "Used for displaying important notifications",
+                "Often paired with sp_api_modal_clear for cleanup",
+                "Does not have functional dependencies with other modal procedures"
+            ]
+        }
+    },
+    "relationship_rules": {
+        "sp_api_modal_clear": {
+            "ignore_relationships_with": [
+                "sp_api_modal_alert",
+                "sp_api_modal_text",
+                "sp_api_modal_button",
+                "sp_api_modal_input"
+            ],
+            "reason": "These are utility relationships, not functional dependencies"
+        }
+    }
+}

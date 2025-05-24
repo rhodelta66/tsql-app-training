@@ -1,0 +1,3216 @@
+{
+    "metadata": {
+        "analysis_date": "2025-05-24T21:44:07.529212",
+        "scripts_analyzed": 400,
+        "procedures_found": 468
+    },
+    "procedures": {
+        "dbo.sp_api_action_as_stored_procedure": {
+            "procedure_name": "dbo.sp_api_action_as_stored_procedure",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_action_to_slaves": {
+            "procedure_name": "dbo.sp_api_action_to_slaves",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_actions_execute_main": {
+            "procedure_name": "dbo.sp_api_actions_execute_main",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_add_column": {
+            "procedure_name": "dbo.sp_api_add_column",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_add_column_to_view": {
+            "procedure_name": "dbo.sp_api_add_column_to_view",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_add_foreign_keys": {
+            "procedure_name": "dbo.sp_api_add_foreign_keys",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_add_sql_task": {
+            "procedure_name": "dbo.sp_api_add_sql_task",
+            "related_procedures": {
+                "dbo.sp_api_modal_select_all_clear": {
+                    "co_occurrence_count": 4
+                },
+                "dbo.sp_api_modal_url": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_text": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_button": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_toast": {
+                    "co_occurrence_count": 2
+                }
+            },
+            "relationship_count": 5
+        },
+        "dbo.sp_api_add_sql_test_then_create": {
+            "procedure_name": "dbo.sp_api_add_sql_test_then_create",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_add_table": {
+            "procedure_name": "dbo.sp_api_add_table",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_add_table_from_text": {
+            "procedure_name": "dbo.sp_api_add_table_from_text",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_add_unique_index": {
+            "procedure_name": "dbo.sp_api_add_unique_index",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_backup": {
+            "procedure_name": "dbo.sp_api_backup",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_backup_all_and_clean_start": {
+            "procedure_name": "dbo.sp_api_backup_all_and_clean_start",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_broker": {
+            "procedure_name": "dbo.sp_api_broker",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_broker_clean_up": {
+            "procedure_name": "dbo.sp_api_broker_clean_up",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_broker_request": {
+            "procedure_name": "dbo.sp_api_broker_request",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_broker_request_linked_server": {
+            "procedure_name": "dbo.sp_api_broker_request_linked_server",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_broker_setup": {
+            "procedure_name": "dbo.sp_api_broker_setup",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_bulk_replace_actions": {
+            "procedure_name": "dbo.sp_api_bulk_replace_actions",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_bulk_replace_templates": {
+            "procedure_name": "dbo.sp_api_bulk_replace_templates",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_bulk_translate": {
+            "procedure_name": "dbo.sp_api_bulk_translate",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_carbone": {
+            "procedure_name": "dbo.sp_api_carbone",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_action_as_stored_procedure": {
+            "procedure_name": "dbo.sp_api_card_action_as_stored_procedure",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_actions": {
+            "procedure_name": "dbo.sp_api_card_actions",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_actions_execute": {
+            "procedure_name": "dbo.sp_api_card_actions_execute",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_actions_execute_main": {
+            "procedure_name": "dbo.sp_api_card_actions_execute_main",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_actions_execute_parse": {
+            "procedure_name": "dbo.sp_api_card_actions_execute_parse",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_actions_execute_pre_declare": {
+            "procedure_name": "dbo.sp_api_card_actions_execute_pre_declare",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_actions_execute_prepare_sql": {
+            "procedure_name": "dbo.sp_api_card_actions_execute_prepare_sql",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_actions_test": {
+            "procedure_name": "dbo.sp_api_card_actions_test",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_actions_v1": {
+            "procedure_name": "dbo.sp_api_card_actions_v1",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_actions_v2": {
+            "procedure_name": "dbo.sp_api_card_actions_v2",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_actions_v3": {
+            "procedure_name": "dbo.sp_api_card_actions_v3",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_clear_dm_cache": {
+            "procedure_name": "dbo.sp_api_card_clear_dm_cache",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_copy_actions": {
+            "procedure_name": "dbo.sp_api_card_copy_actions",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_copy_children": {
+            "procedure_name": "dbo.sp_api_card_copy_children",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_copy_fields": {
+            "procedure_name": "dbo.sp_api_card_copy_fields",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_create": {
+            "procedure_name": "dbo.sp_api_card_create",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_create_as_tvf": {
+            "procedure_name": "dbo.sp_api_card_create_as_tvf",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_create_as_tvf_all": {
+            "procedure_name": "dbo.sp_api_card_create_as_tvf_all",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_create_as_view": {
+            "procedure_name": "dbo.sp_api_card_create_as_view",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_create_cache": {
+            "procedure_name": "dbo.sp_api_card_create_cache",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_create_seek": {
+            "procedure_name": "dbo.sp_api_card_create_seek",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_curly_replace": {
+            "procedure_name": "dbo.sp_api_card_curly_replace",
+            "related_procedures": {
+                "dbo.sp_api_modal_select_curly": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_text": {
+                    "co_occurrence_count": 2
+                }
+            },
+            "relationship_count": 2
+        },
+        "dbo.sp_api_card_curly_replace_params": {
+            "procedure_name": "dbo.sp_api_card_curly_replace_params",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_curly_template": {
+            "procedure_name": "dbo.sp_api_card_curly_template",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_custom": {
+            "procedure_name": "dbo.sp_api_card_custom",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_definition": {
+            "procedure_name": "dbo.sp_api_card_definition",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_definition_test": {
+            "procedure_name": "dbo.sp_api_card_definition_test",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_detail": {
+            "procedure_name": "dbo.sp_api_card_detail",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_detail_edit": {
+            "procedure_name": "dbo.sp_api_card_detail_edit",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_detail_file": {
+            "procedure_name": "dbo.sp_api_card_detail_file",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_detail_files": {
+            "procedure_name": "dbo.sp_api_card_detail_files",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_detail_find_record": {
+            "procedure_name": "dbo.sp_api_card_detail_find_record",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_detail_picklist": {
+            "procedure_name": "dbo.sp_api_card_detail_picklist",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_field_fill_with": {
+            "procedure_name": "dbo.sp_api_card_field_fill_with",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_field_is_updateable": {
+            "procedure_name": "dbo.sp_api_card_field_is_updateable",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_import_csv": {
+            "procedure_name": "dbo.sp_api_card_import_csv",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_import_csv_KIJK_VERDER": {
+            "procedure_name": "dbo.sp_api_card_import_csv_KIJK_VERDER",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_insert": {
+            "procedure_name": "dbo.sp_api_card_insert",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_is_valid": {
+            "procedure_name": "dbo.sp_api_card_is_valid",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_list": {
+            "procedure_name": "dbo.sp_api_card_list",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_list_edit": {
+            "procedure_name": "dbo.sp_api_card_list_edit",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_no_predeclare": {
+            "procedure_name": "dbo.sp_api_card_no_predeclare",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_on_field_update_storage": {
+            "procedure_name": "dbo.sp_api_card_on_field_update_storage",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_re_order": {
+            "procedure_name": "dbo.sp_api_card_re_order",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_referer": {
+            "procedure_name": "dbo.sp_api_card_referer",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_referer_update": {
+            "procedure_name": "dbo.sp_api_card_referer_update",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_template_get": {
+            "procedure_name": "dbo.sp_api_card_template_get",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_template_updater": {
+            "procedure_name": "dbo.sp_api_card_template_updater",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_update_from_body": {
+            "procedure_name": "dbo.sp_api_card_update_from_body",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_card_update_from_storage": {
+            "procedure_name": "dbo.sp_api_card_update_from_storage",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_check_export_views": {
+            "procedure_name": "dbo.sp_api_check_export_views",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_compare": {
+            "procedure_name": "dbo.sp_api_compare",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_compare_main_db_definitions": {
+            "procedure_name": "dbo.sp_api_compare_main_db_definitions",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_confirm": {
+            "procedure_name": "dbo.sp_api_confirm",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_copy_core_data": {
+            "procedure_name": "dbo.sp_api_copy_core_data",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_create_card": {
+            "procedure_name": "dbo.sp_api_create_card",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_create_card_action": {
+            "procedure_name": "dbo.sp_api_create_card_action",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_create_json_data_with_fields_from_select_sql": {
+            "procedure_name": "dbo.sp_api_create_json_data_with_fields_from_select_sql",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_create_setting": {
+            "procedure_name": "dbo.sp_api_create_setting",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_create_synonym": {
+            "procedure_name": "dbo.sp_api_create_synonym",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_create_table_card": {
+            "procedure_name": "dbo.sp_api_create_table_card",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_create_table_from_json_data_with_fields": {
+            "procedure_name": "dbo.sp_api_create_table_from_json_data_with_fields",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_csv_to_json": {
+            "procedure_name": "dbo.sp_api_csv_to_json",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_csv_to_table": {
+            "procedure_name": "dbo.sp_api_csv_to_table",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_daily_project_cleanup": {
+            "procedure_name": "dbo.sp_api_daily_project_cleanup",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_data_set_generic_receiver": {
+            "procedure_name": "dbo.sp_api_data_set_generic_receiver",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_dataset_changes": {
+            "procedure_name": "dbo.sp_api_dataset_changes",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_dataset_chart": {
+            "procedure_name": "dbo.sp_api_dataset_chart",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_dataset_core": {
+            "procedure_name": "dbo.sp_api_dataset_core",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_dataset_get": {
+            "procedure_name": "dbo.sp_api_dataset_get",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_dataset_portal_confirm_token": {
+            "procedure_name": "dbo.sp_api_dataset_portal_confirm_token",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_dataset_portal_request_token": {
+            "procedure_name": "dbo.sp_api_dataset_portal_request_token",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_dataset_portal_validate_token": {
+            "procedure_name": "dbo.sp_api_dataset_portal_validate_token",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_dataset_replace_params": {
+            "procedure_name": "dbo.sp_api_dataset_replace_params",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_dataset_to_power_query": {
+            "procedure_name": "dbo.sp_api_dataset_to_power_query",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_dataset_tsqlsystem": {
+            "procedure_name": "dbo.sp_api_dataset_tsqlsystem",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_dataset_tsqlsystem_backup": {
+            "procedure_name": "dbo.sp_api_dataset_tsqlsystem_backup",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_dataset_tsqlsystem_ip_adress": {
+            "procedure_name": "dbo.sp_api_dataset_tsqlsystem_ip_adress",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_dataset_tsqlsystem_search": {
+            "procedure_name": "dbo.sp_api_dataset_tsqlsystem_search",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_dataset_tsqlsystem_status": {
+            "procedure_name": "dbo.sp_api_dataset_tsqlsystem_status",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_dataset_tsqlsystem_structure": {
+            "procedure_name": "dbo.sp_api_dataset_tsqlsystem_structure",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_dataset_tsqlsystem_structure_json": {
+            "procedure_name": "dbo.sp_api_dataset_tsqlsystem_structure_json",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_dataset_tsqlsystem_ticket": {
+            "procedure_name": "dbo.sp_api_dataset_tsqlsystem_ticket",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_dataset_tsqlsystem_ticket_email": {
+            "procedure_name": "dbo.sp_api_dataset_tsqlsystem_ticket_email",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_dataset_whatsapp": {
+            "procedure_name": "dbo.sp_api_dataset_whatsapp",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_dataset_whatsapp_process_webhook": {
+            "procedure_name": "dbo.sp_api_dataset_whatsapp_process_webhook",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_deadlocks_add_from_log": {
+            "procedure_name": "dbo.sp_api_deadlocks_add_from_log",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_email": {
+            "procedure_name": "dbo.sp_api_email",
+            "related_procedures": {
+                "dbo.sp_api_html_table": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_toast": {
+                    "co_occurrence_count": 2
+                }
+            },
+            "relationship_count": 2
+        },
+        "dbo.sp_api_error_handler": {
+            "procedure_name": "dbo.sp_api_error_handler",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_error_handler_set_first": {
+            "procedure_name": "dbo.sp_api_error_handler_set_first",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_error_handler_sql": {
+            "procedure_name": "dbo.sp_api_error_handler_sql",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_error_insert": {
+            "procedure_name": "dbo.sp_api_error_insert",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_event_session_init": {
+            "procedure_name": "dbo.sp_api_event_session_init",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_excel": {
+            "procedure_name": "dbo.sp_api_excel",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_excel_read": {
+            "procedure_name": "dbo.sp_api_excel_read",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_exec": {
+            "procedure_name": "dbo.sp_api_exec",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_exec_static": {
+            "procedure_name": "dbo.sp_api_exec_static",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_export": {
+            "procedure_name": "dbo.sp_api_export",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_favicon_ico": {
+            "procedure_name": "dbo.sp_api_favicon_ico",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_fetch": {
+            "procedure_name": "dbo.sp_api_fetch",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_fetch_async": {
+            "procedure_name": "dbo.sp_api_fetch_async",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_fetch_binary": {
+            "procedure_name": "dbo.sp_api_fetch_binary",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_fetch_json": {
+            "procedure_name": "dbo.sp_api_fetch_json",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_file_auto_detect": {
+            "procedure_name": "dbo.sp_api_file_auto_detect",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_file_category": {
+            "procedure_name": "dbo.sp_api_file_category",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_file_clean_up": {
+            "procedure_name": "dbo.sp_api_file_clean_up",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_file_download": {
+            "procedure_name": "dbo.sp_api_file_download",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_file_get": {
+            "procedure_name": "dbo.sp_api_file_get",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_file_ocr": {
+            "procedure_name": "dbo.sp_api_file_ocr",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_file_set": {
+            "procedure_name": "dbo.sp_api_file_set",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_fk_usage": {
+            "procedure_name": "dbo.sp_api_fk_usage",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_foreach_id": {
+            "procedure_name": "dbo.sp_api_foreach_id",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_ftp_put": {
+            "procedure_name": "dbo.sp_api_ftp_put",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_get_children": {
+            "procedure_name": "dbo.sp_api_get_children",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_get_children_v2": {
+            "procedure_name": "dbo.sp_api_get_children_v2",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_get_master_api_root_url": {
+            "procedure_name": "dbo.sp_api_get_master_api_root_url",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_get_parents": {
+            "procedure_name": "dbo.sp_api_get_parents",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_get_parents_v2": {
+            "procedure_name": "dbo.sp_api_get_parents_v2",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_get_parents_v3": {
+            "procedure_name": "dbo.sp_api_get_parents_v3",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_get_query_filter": {
+            "procedure_name": "dbo.sp_api_get_query_filter",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_get_relevance_order": {
+            "procedure_name": "dbo.sp_api_get_relevance_order",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_get_relevance_order_fast": {
+            "procedure_name": "dbo.sp_api_get_relevance_order_fast",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_get_relevance_order_super_fast": {
+            "procedure_name": "dbo.sp_api_get_relevance_order_super_fast",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_go_back": {
+            "procedure_name": "dbo.sp_api_go_back",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_go2": {
+            "procedure_name": "dbo.sp_api_go2",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_goto": {
+            "procedure_name": "dbo.sp_api_goto",
+            "related_procedures": {
+                "dbo.sp_api_modal_alert": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_modal_clear": {
+                    "co_occurrence_count": 8
+                },
+                "dbo.sp_api_modal_text": {
+                    "co_occurrence_count": 7
+                },
+                "dbo.sp_api_modal_input": {
+                    "co_occurrence_count": 4
+                },
+                "dbo.sp_api_modal_button": {
+                    "co_occurrence_count": 7
+                },
+                "dbo.sp_api_toast": {
+                    "co_occurrence_count": 11
+                },
+                "dbo.sp_api_modal_select": {
+                    "co_occurrence_count": 4
+                },
+                "dbo.sp_api_modal_post": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_keypress": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_modal_date": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_select_table": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_table": {
+                    "co_occurrence_count": 2
+                }
+            },
+            "relationship_count": 12
+        },
+        "dbo.sp_api_goto_get_filter_and_sorting": {
+            "procedure_name": "dbo.sp_api_goto_get_filter_and_sorting",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_health_status": {
+            "procedure_name": "dbo.sp_api_health_status",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_history_delete": {
+            "procedure_name": "dbo.sp_api_history_delete",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_html_table": {
+            "procedure_name": "dbo.sp_api_html_table",
+            "related_procedures": {
+                "dbo.sp_api_toast": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_email": {
+                    "co_occurrence_count": 2
+                }
+            },
+            "relationship_count": 2
+        },
+        "dbo.sp_api_image_resize": {
+            "procedure_name": "dbo.sp_api_image_resize",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_import": {
+            "procedure_name": "dbo.sp_api_import",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_import_cards": {
+            "procedure_name": "dbo.sp_api_import_cards",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_import_csv_to_table": {
+            "procedure_name": "dbo.sp_api_import_csv_to_table",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_import_from_master": {
+            "procedure_name": "dbo.sp_api_import_from_master",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_import_insert": {
+            "procedure_name": "dbo.sp_api_import_insert",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_import_system_card": {
+            "procedure_name": "dbo.sp_api_import_system_card",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_import_update": {
+            "procedure_name": "dbo.sp_api_import_update",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_insert_into": {
+            "procedure_name": "dbo.sp_api_insert_into",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_ip_info": {
+            "procedure_name": "dbo.sp_api_ip_info",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_json_pivot": {
+            "procedure_name": "dbo.sp_api_json_pivot",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_json_to_table": {
+            "procedure_name": "dbo.sp_api_json_to_table",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_keypress": {
+            "procedure_name": "dbo.sp_api_keypress",
+            "related_procedures": {
+                "dbo.sp_api_goto": {
+                    "co_occurrence_count": 3
+                }
+            },
+            "relationship_count": 1
+        },
+        "dbo.sp_api_menu": {
+            "procedure_name": "dbo.sp_api_menu",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_mo0dal_file_multi_old": {
+            "procedure_name": "dbo.sp_api_mo0dal_file_multi_old",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_action": {
+            "procedure_name": "dbo.sp_api_modal_action",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_address": {
+            "procedure_name": "dbo.sp_api_modal_address",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_address_search_save": {
+            "procedure_name": "dbo.sp_api_modal_address_search_save",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_alert": {
+            "procedure_name": "dbo.sp_api_modal_alert",
+            "related_procedures": {
+                "dbo.sp_api_modal_clear": {
+                    "co_occurrence_count": 24
+                },
+                "dbo.sp_api_modal_text": {
+                    "co_occurrence_count": 15
+                },
+                "dbo.sp_api_modal_input": {
+                    "co_occurrence_count": 10
+                },
+                "dbo.sp_api_modal_button": {
+                    "co_occurrence_count": 13
+                },
+                "dbo.sp_api_toast": {
+                    "co_occurrence_count": 18
+                },
+                "dbo.sp_api_goto": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_modal_select_all_clear": {
+                    "co_occurrence_count": 5
+                },
+                "dbo.sp_api_modal_route": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_modal_table": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_populate_card": {
+                    "co_occurrence_count": 2
+                }
+            },
+            "relationship_count": 10
+        },
+        "dbo.sp_api_modal_alert_error": {
+            "procedure_name": "dbo.sp_api_modal_alert_error",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_alert_new": {
+            "procedure_name": "dbo.sp_api_modal_alert_new",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_audio": {
+            "procedure_name": "dbo.sp_api_modal_audio",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_beep": {
+            "procedure_name": "dbo.sp_api_modal_beep",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_button": {
+            "procedure_name": "dbo.sp_api_modal_button",
+            "related_procedures": {
+                "dbo.sp_api_modal_input": {
+                    "co_occurrence_count": 35
+                },
+                "dbo.sp_api_modal_text": {
+                    "co_occurrence_count": 60
+                },
+                "dbo.sp_api_modal_date": {
+                    "co_occurrence_count": 12
+                },
+                "dbo.sp_api_modal_print": {
+                    "co_occurrence_count": 10
+                },
+                "dbo.sp_api_modal_table": {
+                    "co_occurrence_count": 24
+                },
+                "dbo.sp_api_modal_csv": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_get": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_modal_clear": {
+                    "co_occurrence_count": 35
+                },
+                "dbo.sp_api_toast": {
+                    "co_occurrence_count": 33
+                },
+                "dbo.sp_api_modal_route": {
+                    "co_occurrence_count": 5
+                },
+                "dbo.sp_api_modal_alert": {
+                    "co_occurrence_count": 13
+                },
+                "dbo.sp_api_goto": {
+                    "co_occurrence_count": 7
+                },
+                "dbo.sp_api_add_sql_task": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_select_all_clear": {
+                    "co_occurrence_count": 5
+                },
+                "dbo.sp_api_modal_url": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_select": {
+                    "co_occurrence_count": 10
+                },
+                "dbo.sp_api_modal_post": {
+                    "co_occurrence_count": 5
+                },
+                "dbo.sp_api_modal_save": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_set": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_select_curly": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_modal": {
+                    "co_occurrence_count": 4
+                },
+                "dbo.sp_api_modal_dispatch": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_select_table": {
+                    "co_occurrence_count": 4
+                },
+                "dbo.sp_api_modal_choose": {
+                    "co_occurrence_count": 2
+                }
+            },
+            "relationship_count": 24
+        },
+        "dbo.sp_api_modal_button_back": {
+            "procedure_name": "dbo.sp_api_modal_button_back",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_chart": {
+            "procedure_name": "dbo.sp_api_modal_chart",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_choose": {
+            "procedure_name": "dbo.sp_api_modal_choose",
+            "related_procedures": {
+                "dbo.sp_api_modal_text": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_input": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_button": {
+                    "co_occurrence_count": 2
+                }
+            },
+            "relationship_count": 3
+        },
+        "dbo.sp_api_modal_choose_list": {
+            "procedure_name": "dbo.sp_api_modal_choose_list",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_clear": {
+            "procedure_name": "dbo.sp_api_modal_clear",
+            "related_procedures": {
+                "dbo.sp_api_modal_get": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_modal_text": {
+                    "co_occurrence_count": 36
+                },
+                "dbo.sp_api_modal_button": {
+                    "co_occurrence_count": 35
+                },
+                "dbo.sp_api_toast": {
+                    "co_occurrence_count": 34
+                },
+                "dbo.sp_api_modal_route": {
+                    "co_occurrence_count": 7
+                },
+                "dbo.sp_api_modal_input": {
+                    "co_occurrence_count": 23
+                },
+                "dbo.sp_api_modal_alert": {
+                    "co_occurrence_count": 24
+                },
+                "dbo.sp_api_goto": {
+                    "co_occurrence_count": 8
+                },
+                "dbo.sp_api_modal_select": {
+                    "co_occurrence_count": 8
+                },
+                "dbo.sp_api_modal_date": {
+                    "co_occurrence_count": 6
+                },
+                "dbo.sp_api_modal_select_all_clear": {
+                    "co_occurrence_count": 7
+                },
+                "dbo.sp_api_modal_post": {
+                    "co_occurrence_count": 6
+                },
+                "dbo.sp_api_modal_save": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_set": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_pathname": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_select_table": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_modal_table": {
+                    "co_occurrence_count": 6
+                },
+                "dbo.sp_api_modal_select_curly": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_populate_card": {
+                    "co_occurrence_count": 2
+                }
+            },
+            "relationship_count": 19
+        },
+        "dbo.sp_api_modal_csv": {
+            "procedure_name": "dbo.sp_api_modal_csv",
+            "related_procedures": {
+                "dbo.sp_api_modal_text": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_date": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_button": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_print": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_table": {
+                    "co_occurrence_count": 2
+                }
+            },
+            "relationship_count": 5
+        },
+        "dbo.sp_api_modal_csv_from_file": {
+            "procedure_name": "dbo.sp_api_modal_csv_from_file",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_date": {
+            "procedure_name": "dbo.sp_api_modal_date",
+            "related_procedures": {
+                "dbo.sp_api_modal_input": {
+                    "co_occurrence_count": 9
+                },
+                "dbo.sp_api_modal_text": {
+                    "co_occurrence_count": 11
+                },
+                "dbo.sp_api_modal_button": {
+                    "co_occurrence_count": 12
+                },
+                "dbo.sp_api_modal_print": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_modal_table": {
+                    "co_occurrence_count": 8
+                },
+                "dbo.sp_api_modal_csv": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_select": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_toast": {
+                    "co_occurrence_count": 6
+                },
+                "dbo.sp_api_modal_clear": {
+                    "co_occurrence_count": 6
+                },
+                "dbo.sp_api_modal_select_table": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_goto": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_post": {
+                    "co_occurrence_count": 3
+                }
+            },
+            "relationship_count": 12
+        },
+        "dbo.sp_api_modal_date_from_to": {
+            "procedure_name": "dbo.sp_api_modal_date_from_to",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_datetime": {
+            "procedure_name": "dbo.sp_api_modal_datetime",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_debug": {
+            "procedure_name": "dbo.sp_api_modal_debug",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_dispatch": {
+            "procedure_name": "dbo.sp_api_modal_dispatch",
+            "related_procedures": {
+                "dbo.sp_api_toast": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_text": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_button": {
+                    "co_occurrence_count": 2
+                }
+            },
+            "relationship_count": 3
+        },
+        "dbo.sp_api_modal_download": {
+            "procedure_name": "dbo.sp_api_modal_download",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_download_report": {
+            "procedure_name": "dbo.sp_api_modal_download_report",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_download_reports": {
+            "procedure_name": "dbo.sp_api_modal_download_reports",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_editor": {
+            "procedure_name": "dbo.sp_api_modal_editor",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_end": {
+            "procedure_name": "dbo.sp_api_modal_end",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_field_insert": {
+            "procedure_name": "dbo.sp_api_modal_field_insert",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_file": {
+            "procedure_name": "dbo.sp_api_modal_file",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_file_multi": {
+            "procedure_name": "dbo.sp_api_modal_file_multi",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_file_multi_test": {
+            "procedure_name": "dbo.sp_api_modal_file_multi_test",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_file_thumbnails": {
+            "procedure_name": "dbo.sp_api_modal_file_thumbnails",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_focus": {
+            "procedure_name": "dbo.sp_api_modal_focus",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_get": {
+            "procedure_name": "dbo.sp_api_modal_get",
+            "related_procedures": {
+                "dbo.sp_api_modal_text": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_modal_button": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_modal_clear": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_toast": {
+                    "co_occurrence_count": 4
+                },
+                "dbo.sp_api_modal_route": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_modal_set": {
+                    "co_occurrence_count": 2
+                }
+            },
+            "relationship_count": 6
+        },
+        "dbo.sp_api_modal_get_listview_reducer": {
+            "procedure_name": "dbo.sp_api_modal_get_listview_reducer",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_get_value": {
+            "procedure_name": "dbo.sp_api_modal_get_value",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_html": {
+            "procedure_name": "dbo.sp_api_modal_html",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_html2pdf": {
+            "procedure_name": "dbo.sp_api_modal_html2pdf",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_image": {
+            "procedure_name": "dbo.sp_api_modal_image",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_input": {
+            "procedure_name": "dbo.sp_api_modal_input",
+            "related_procedures": {
+                "dbo.sp_api_modal_text": {
+                    "co_occurrence_count": 35
+                },
+                "dbo.sp_api_modal_date": {
+                    "co_occurrence_count": 9
+                },
+                "dbo.sp_api_modal_button": {
+                    "co_occurrence_count": 35
+                },
+                "dbo.sp_api_modal_print": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_table": {
+                    "co_occurrence_count": 12
+                },
+                "dbo.sp_api_modal_clear": {
+                    "co_occurrence_count": 23
+                },
+                "dbo.sp_api_toast": {
+                    "co_occurrence_count": 23
+                },
+                "dbo.sp_api_modal_route": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_alert": {
+                    "co_occurrence_count": 10
+                },
+                "dbo.sp_api_goto": {
+                    "co_occurrence_count": 4
+                },
+                "dbo.sp_api_modal_select": {
+                    "co_occurrence_count": 6
+                },
+                "dbo.sp_api_modal_select_table": {
+                    "co_occurrence_count": 4
+                },
+                "dbo.sp_api_modal_post": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_modal_choose": {
+                    "co_occurrence_count": 2
+                }
+            },
+            "relationship_count": 14
+        },
+        "dbo.sp_api_modal_input_calculator": {
+            "procedure_name": "dbo.sp_api_modal_input_calculator",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_input_date": {
+            "procedure_name": "dbo.sp_api_modal_input_date",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_input_datetime": {
+            "procedure_name": "dbo.sp_api_modal_input_datetime",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_input_datetime_test": {
+            "procedure_name": "dbo.sp_api_modal_input_datetime_test",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_input_decimal": {
+            "procedure_name": "dbo.sp_api_modal_input_decimal",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_input_time": {
+            "procedure_name": "dbo.sp_api_modal_input_time",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_instant_report": {
+            "procedure_name": "dbo.sp_api_modal_instant_report",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_media": {
+            "procedure_name": "dbo.sp_api_modal_media",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_menu_user": {
+            "procedure_name": "dbo.sp_api_modal_menu_user",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_modal": {
+            "procedure_name": "dbo.sp_api_modal_modal",
+            "related_procedures": {
+                "dbo.sp_api_modal_button": {
+                    "co_occurrence_count": 4
+                },
+                "dbo.sp_api_modal_print": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_text": {
+                    "co_occurrence_count": 5
+                },
+                "dbo.sp_api_modal_table": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_toast": {
+                    "co_occurrence_count": 3
+                }
+            },
+            "relationship_count": 5
+        },
+        "dbo.sp_api_modal_most_used_cards": {
+            "procedure_name": "dbo.sp_api_modal_most_used_cards",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_multi_select": {
+            "procedure_name": "dbo.sp_api_modal_multi_select",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_outerhtml": {
+            "procedure_name": "dbo.sp_api_modal_outerhtml",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_paste": {
+            "procedure_name": "dbo.sp_api_modal_paste",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_paste_2": {
+            "procedure_name": "dbo.sp_api_modal_paste_2",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_pathname": {
+            "procedure_name": "dbo.sp_api_modal_pathname",
+            "related_procedures": {
+                "dbo.sp_api_modal_text": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_clear": {
+                    "co_occurrence_count": 2
+                }
+            },
+            "relationship_count": 2
+        },
+        "dbo.sp_api_modal_pdf_merge": {
+            "procedure_name": "dbo.sp_api_modal_pdf_merge",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_pdf_merge_multi": {
+            "procedure_name": "dbo.sp_api_modal_pdf_merge_multi",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_pdf2json": {
+            "procedure_name": "dbo.sp_api_modal_pdf2json",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_placeholder": {
+            "procedure_name": "dbo.sp_api_modal_placeholder",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_post": {
+            "procedure_name": "dbo.sp_api_modal_post",
+            "related_procedures": {
+                "dbo.sp_api_modal_select": {
+                    "co_occurrence_count": 4
+                },
+                "dbo.sp_api_modal_button": {
+                    "co_occurrence_count": 5
+                },
+                "dbo.sp_api_toast": {
+                    "co_occurrence_count": 4
+                },
+                "dbo.sp_api_goto": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_modal_clear": {
+                    "co_occurrence_count": 6
+                },
+                "dbo.sp_api_modal_save": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_modal_text": {
+                    "co_occurrence_count": 4
+                },
+                "dbo.sp_api_modal_date": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_modal_input": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_modal_select_table": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_table": {
+                    "co_occurrence_count": 2
+                }
+            },
+            "relationship_count": 11
+        },
+        "dbo.sp_api_modal_preview": {
+            "procedure_name": "dbo.sp_api_modal_preview",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_preview_report": {
+            "procedure_name": "dbo.sp_api_modal_preview_report",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_print": {
+            "procedure_name": "dbo.sp_api_modal_print",
+            "related_procedures": {
+                "dbo.sp_api_modal_input": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_text": {
+                    "co_occurrence_count": 10
+                },
+                "dbo.sp_api_modal_date": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_modal_button": {
+                    "co_occurrence_count": 10
+                },
+                "dbo.sp_api_modal_table": {
+                    "co_occurrence_count": 10
+                },
+                "dbo.sp_api_modal_csv": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_toast": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_modal": {
+                    "co_occurrence_count": 2
+                }
+            },
+            "relationship_count": 8
+        },
+        "dbo.sp_api_modal_qr_code": {
+            "procedure_name": "dbo.sp_api_modal_qr_code",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_qr_scanner": {
+            "procedure_name": "dbo.sp_api_modal_qr_scanner",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_reducer": {
+            "procedure_name": "dbo.sp_api_modal_reducer",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_refresh": {
+            "procedure_name": "dbo.sp_api_modal_refresh",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_reload": {
+            "procedure_name": "dbo.sp_api_modal_reload",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_reload_client": {
+            "procedure_name": "dbo.sp_api_modal_reload_client",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_restart": {
+            "procedure_name": "dbo.sp_api_modal_restart",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_route": {
+            "procedure_name": "dbo.sp_api_modal_route",
+            "related_procedures": {
+                "dbo.sp_api_modal_get": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_modal_text": {
+                    "co_occurrence_count": 7
+                },
+                "dbo.sp_api_modal_button": {
+                    "co_occurrence_count": 5
+                },
+                "dbo.sp_api_modal_clear": {
+                    "co_occurrence_count": 7
+                },
+                "dbo.sp_api_toast": {
+                    "co_occurrence_count": 5
+                },
+                "dbo.sp_api_modal_input": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_alert": {
+                    "co_occurrence_count": 3
+                }
+            },
+            "relationship_count": 7
+        },
+        "dbo.sp_api_modal_run": {
+            "procedure_name": "dbo.sp_api_modal_run",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_save": {
+            "procedure_name": "dbo.sp_api_modal_save",
+            "related_procedures": {
+                "dbo.sp_api_modal_post": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_modal_clear": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_text": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_button": {
+                    "co_occurrence_count": 2
+                }
+            },
+            "relationship_count": 4
+        },
+        "dbo.sp_api_modal_scanner": {
+            "procedure_name": "dbo.sp_api_modal_scanner",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_screenshot": {
+            "procedure_name": "dbo.sp_api_modal_screenshot",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_select": {
+            "procedure_name": "dbo.sp_api_modal_select",
+            "related_procedures": {
+                "dbo.sp_api_modal_text": {
+                    "co_occurrence_count": 11
+                },
+                "dbo.sp_api_modal_button": {
+                    "co_occurrence_count": 10
+                },
+                "dbo.sp_api_modal_table": {
+                    "co_occurrence_count": 5
+                },
+                "dbo.sp_api_toast": {
+                    "co_occurrence_count": 7
+                },
+                "dbo.sp_api_modal_input": {
+                    "co_occurrence_count": 6
+                },
+                "dbo.sp_api_modal_clear": {
+                    "co_occurrence_count": 8
+                },
+                "dbo.sp_api_modal_date": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_modal_post": {
+                    "co_occurrence_count": 4
+                },
+                "dbo.sp_api_goto": {
+                    "co_occurrence_count": 4
+                },
+                "dbo.sp_api_modal_select_table": {
+                    "co_occurrence_count": 2
+                }
+            },
+            "relationship_count": 10
+        },
+        "dbo.sp_api_modal_select_all": {
+            "procedure_name": "dbo.sp_api_modal_select_all",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_select_all_clear": {
+            "procedure_name": "dbo.sp_api_modal_select_all_clear",
+            "related_procedures": {
+                "dbo.sp_api_add_sql_task": {
+                    "co_occurrence_count": 4
+                },
+                "dbo.sp_api_modal_url": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_text": {
+                    "co_occurrence_count": 5
+                },
+                "dbo.sp_api_modal_button": {
+                    "co_occurrence_count": 5
+                },
+                "dbo.sp_api_modal_clear": {
+                    "co_occurrence_count": 7
+                },
+                "dbo.sp_api_modal_alert": {
+                    "co_occurrence_count": 5
+                },
+                "dbo.sp_api_toast": {
+                    "co_occurrence_count": 10
+                }
+            },
+            "relationship_count": 7
+        },
+        "dbo.sp_api_modal_select_curly": {
+            "procedure_name": "dbo.sp_api_modal_select_curly",
+            "related_procedures": {
+                "dbo.sp_api_modal_button": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_card_curly_replace": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_text": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_modal_clear": {
+                    "co_occurrence_count": 2
+                }
+            },
+            "relationship_count": 4
+        },
+        "dbo.sp_api_modal_select_ids": {
+            "procedure_name": "dbo.sp_api_modal_select_ids",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_select_table": {
+            "procedure_name": "dbo.sp_api_modal_select_table",
+            "related_procedures": {
+                "dbo.sp_api_modal_text": {
+                    "co_occurrence_count": 4
+                },
+                "dbo.sp_api_modal_button": {
+                    "co_occurrence_count": 4
+                },
+                "dbo.sp_api_modal_clear": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_modal_select": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_date": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_input": {
+                    "co_occurrence_count": 4
+                },
+                "dbo.sp_api_goto": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_table": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_modal_post": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_toast": {
+                    "co_occurrence_count": 3
+                }
+            },
+            "relationship_count": 10
+        },
+        "dbo.sp_api_modal_set": {
+            "procedure_name": "dbo.sp_api_modal_set",
+            "related_procedures": {
+                "dbo.sp_api_modal_get": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_button": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_clear": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_toast": {
+                    "co_occurrence_count": 2
+                }
+            },
+            "relationship_count": 4
+        },
+        "dbo.sp_api_modal_show_json_values": {
+            "procedure_name": "dbo.sp_api_modal_show_json_values",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_signature": {
+            "procedure_name": "dbo.sp_api_modal_signature",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_sure": {
+            "procedure_name": "dbo.sp_api_modal_sure",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_switch": {
+            "procedure_name": "dbo.sp_api_modal_switch",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_table": {
+            "procedure_name": "dbo.sp_api_modal_table",
+            "related_procedures": {
+                "dbo.sp_api_modal_input": {
+                    "co_occurrence_count": 12
+                },
+                "dbo.sp_api_modal_text": {
+                    "co_occurrence_count": 24
+                },
+                "dbo.sp_api_modal_date": {
+                    "co_occurrence_count": 8
+                },
+                "dbo.sp_api_modal_button": {
+                    "co_occurrence_count": 24
+                },
+                "dbo.sp_api_modal_print": {
+                    "co_occurrence_count": 10
+                },
+                "dbo.sp_api_modal_csv": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_select": {
+                    "co_occurrence_count": 5
+                },
+                "dbo.sp_api_toast": {
+                    "co_occurrence_count": 9
+                },
+                "dbo.sp_api_modal_modal": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_modal_clear": {
+                    "co_occurrence_count": 6
+                },
+                "dbo.sp_api_modal_select_table": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_goto": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_post": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_alert": {
+                    "co_occurrence_count": 3
+                }
+            },
+            "relationship_count": 14
+        },
+        "dbo.sp_api_modal_table_edit": {
+            "procedure_name": "dbo.sp_api_modal_table_edit",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_table_json": {
+            "procedure_name": "dbo.sp_api_modal_table_json",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_table_mapper": {
+            "procedure_name": "dbo.sp_api_modal_table_mapper",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_table_to_html": {
+            "procedure_name": "dbo.sp_api_modal_table_to_html",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_table_update": {
+            "procedure_name": "dbo.sp_api_modal_table_update",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_text": {
+            "procedure_name": "dbo.sp_api_modal_text",
+            "related_procedures": {
+                "dbo.sp_api_modal_input": {
+                    "co_occurrence_count": 35
+                },
+                "dbo.sp_api_modal_date": {
+                    "co_occurrence_count": 11
+                },
+                "dbo.sp_api_modal_button": {
+                    "co_occurrence_count": 60
+                },
+                "dbo.sp_api_modal_print": {
+                    "co_occurrence_count": 10
+                },
+                "dbo.sp_api_modal_table": {
+                    "co_occurrence_count": 24
+                },
+                "dbo.sp_api_modal_csv": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_get": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_modal_clear": {
+                    "co_occurrence_count": 36
+                },
+                "dbo.sp_api_toast": {
+                    "co_occurrence_count": 35
+                },
+                "dbo.sp_api_modal_route": {
+                    "co_occurrence_count": 7
+                },
+                "dbo.sp_api_modal_alert": {
+                    "co_occurrence_count": 15
+                },
+                "dbo.sp_api_goto": {
+                    "co_occurrence_count": 7
+                },
+                "dbo.sp_api_add_sql_task": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_select_all_clear": {
+                    "co_occurrence_count": 5
+                },
+                "dbo.sp_api_modal_url": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_select": {
+                    "co_occurrence_count": 11
+                },
+                "dbo.sp_api_modal_post": {
+                    "co_occurrence_count": 4
+                },
+                "dbo.sp_api_modal_save": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_select_curly": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_card_curly_replace": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_modal": {
+                    "co_occurrence_count": 5
+                },
+                "dbo.sp_api_modal_dispatch": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_pathname": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_select_table": {
+                    "co_occurrence_count": 4
+                },
+                "dbo.sp_api_report_generate": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_choose": {
+                    "co_occurrence_count": 2
+                }
+            },
+            "relationship_count": 26
+        },
+        "dbo.sp_api_modal_to_pdf": {
+            "procedure_name": "dbo.sp_api_modal_to_pdf",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_url": {
+            "procedure_name": "dbo.sp_api_modal_url",
+            "related_procedures": {
+                "dbo.sp_api_add_sql_task": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_select_all_clear": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_text": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_button": {
+                    "co_occurrence_count": 2
+                }
+            },
+            "relationship_count": 4
+        },
+        "dbo.sp_api_modal_value": {
+            "procedure_name": "dbo.sp_api_modal_value",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_values_clear": {
+            "procedure_name": "dbo.sp_api_modal_values_clear",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modal_workflow": {
+            "procedure_name": "dbo.sp_api_modal_workflow",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modalchart_sql": {
+            "procedure_name": "dbo.sp_api_modalchart_sql",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_modalview_add": {
+            "procedure_name": "dbo.sp_api_modalview_add",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_moodal_table_update_old_220408": {
+            "procedure_name": "dbo.sp_api_moodal_table_update_old_220408",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_moodal_table_update_test": {
+            "procedure_name": "dbo.sp_api_moodal_table_update_test",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_oauth": {
+            "procedure_name": "dbo.sp_api_oauth",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_openid_connect_token": {
+            "procedure_name": "dbo.sp_api_openid_connect_token",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_pdf2json": {
+            "procedure_name": "dbo.sp_api_pdf2json",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_performance_test": {
+            "procedure_name": "dbo.sp_api_performance_test",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_places_by_id": {
+            "procedure_name": "dbo.sp_api_places_by_id",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_places_search": {
+            "procedure_name": "dbo.sp_api_places_search",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_places_search_apis_post": {
+            "procedure_name": "dbo.sp_api_places_search_apis_post",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_places_search_clean_string": {
+            "procedure_name": "dbo.sp_api_places_search_clean_string",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_populate_card": {
+            "procedure_name": "dbo.sp_api_populate_card",
+            "related_procedures": {
+                "dbo.sp_api_modal_alert": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_clear": {
+                    "co_occurrence_count": 2
+                }
+            },
+            "relationship_count": 2
+        },
+        "dbo.sp_api_populate_card_views": {
+            "procedure_name": "dbo.sp_api_populate_card_views",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_populate_cards": {
+            "procedure_name": "dbo.sp_api_populate_cards",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_populate_lang": {
+            "procedure_name": "dbo.sp_api_populate_lang",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_push_bullet": {
+            "procedure_name": "dbo.sp_api_push_bullet",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_qr_sync": {
+            "procedure_name": "dbo.sp_api_qr_sync",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_query_to_html": {
+            "procedure_name": "dbo.sp_api_query_to_html",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_raw_json_example": {
+            "procedure_name": "dbo.sp_api_raw_json_example",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_readFile": {
+            "procedure_name": "dbo.sp_api_readFile",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_referer_update": {
+            "procedure_name": "dbo.sp_api_referer_update",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_regex_build_sql": {
+            "procedure_name": "dbo.sp_api_regex_build_sql",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_regex_build_tvf": {
+            "procedure_name": "dbo.sp_api_regex_build_tvf",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_reload_db": {
+            "procedure_name": "dbo.sp_api_reload_db",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_rename": {
+            "procedure_name": "dbo.sp_api_rename",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_report": {
+            "procedure_name": "dbo.sp_api_report",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_report_download": {
+            "procedure_name": "dbo.sp_api_report_download",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_report_download_base64": {
+            "procedure_name": "dbo.sp_api_report_download_base64",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_report_download_base64_devexpress": {
+            "procedure_name": "dbo.sp_api_report_download_base64_devexpress",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_report_download_to_file": {
+            "procedure_name": "dbo.sp_api_report_download_to_file",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_report_generate": {
+            "procedure_name": "dbo.sp_api_report_generate",
+            "related_procedures": {
+                "dbo.sp_api_toast": {
+                    "co_occurrence_count": 7
+                },
+                "dbo.sp_api_modal_text": {
+                    "co_occurrence_count": 2
+                }
+            },
+            "relationship_count": 2
+        },
+        "dbo.sp_api_report_generate_replace_null": {
+            "procedure_name": "dbo.sp_api_report_generate_replace_null",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_report_generate_routing": {
+            "procedure_name": "dbo.sp_api_report_generate_routing",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_report_generate_task": {
+            "procedure_name": "dbo.sp_api_report_generate_task",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_report_print": {
+            "procedure_name": "dbo.sp_api_report_print",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_report_print_get_printers": {
+            "procedure_name": "dbo.sp_api_report_print_get_printers",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_report_print_job_cancel": {
+            "procedure_name": "dbo.sp_api_report_print_job_cancel",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_report_print_job_create": {
+            "procedure_name": "dbo.sp_api_report_print_job_create",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_report_send": {
+            "procedure_name": "dbo.sp_api_report_send",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_report_server_download": {
+            "procedure_name": "dbo.sp_api_report_server_download",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_report_server_key": {
+            "procedure_name": "dbo.sp_api_report_server_key",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_report_server_log": {
+            "procedure_name": "dbo.sp_api_report_server_log",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_report_use_dev_express_reporting": {
+            "procedure_name": "dbo.sp_api_report_use_dev_express_reporting",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_report_validate": {
+            "procedure_name": "dbo.sp_api_report_validate",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_restore_from_audit": {
+            "procedure_name": "dbo.sp_api_restore_from_audit",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_run_at_tsql_app_slaves": {
+            "procedure_name": "dbo.sp_api_run_at_tsql_app_slaves",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_run_task": {
+            "procedure_name": "dbo.sp_api_run_task",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_run_tasks": {
+            "procedure_name": "dbo.sp_api_run_tasks",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_script_get": {
+            "procedure_name": "dbo.sp_api_script_get",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_search": {
+            "procedure_name": "dbo.sp_api_search",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_send_report": {
+            "procedure_name": "dbo.sp_api_send_report",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_set_lang": {
+            "procedure_name": "dbo.sp_api_set_lang",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_set_lang_delete_all": {
+            "procedure_name": "dbo.sp_api_set_lang_delete_all",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_set_query_parameter": {
+            "procedure_name": "dbo.sp_api_set_query_parameter",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_set_query_var_from_context": {
+            "procedure_name": "dbo.sp_api_set_query_var_from_context",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_set_user": {
+            "procedure_name": "dbo.sp_api_set_user",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_setting_get": {
+            "procedure_name": "dbo.sp_api_setting_get",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_setting_set": {
+            "procedure_name": "dbo.sp_api_setting_set",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_setup_config": {
+            "procedure_name": "dbo.sp_api_setup_config",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_sftp_put": {
+            "procedure_name": "dbo.sp_api_sftp_put",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_action_create": {
+            "procedure_name": "dbo.sp_api_snippet_action_create",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_action_name": {
+            "procedure_name": "dbo.sp_api_snippet_action_name",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_add_button": {
+            "procedure_name": "dbo.sp_api_snippet_add_button",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_attach_excel_report_to_card": {
+            "procedure_name": "dbo.sp_api_snippet_attach_excel_report_to_card",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_card_record_select": {
+            "procedure_name": "dbo.sp_api_snippet_card_record_select",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_card_table_schema": {
+            "procedure_name": "dbo.sp_api_snippet_card_table_schema",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_chart_line": {
+            "procedure_name": "dbo.sp_api_snippet_chart_line",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_choose_example": {
+            "procedure_name": "dbo.sp_api_snippet_choose_example",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_clone_record": {
+            "procedure_name": "dbo.sp_api_snippet_clone_record",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_color_picker_demo": {
+            "procedure_name": "dbo.sp_api_snippet_color_picker_demo",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_confirm_button": {
+            "procedure_name": "dbo.sp_api_snippet_confirm_button",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_cursor": {
+            "procedure_name": "dbo.sp_api_snippet_cursor",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_cursor_while": {
+            "procedure_name": "dbo.sp_api_snippet_cursor_while",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_data_transfer_object": {
+            "procedure_name": "dbo.sp_api_snippet_data_transfer_object",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_declare_variable": {
+            "procedure_name": "dbo.sp_api_snippet_declare_variable",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_erd_display_relations_for_card": {
+            "procedure_name": "dbo.sp_api_snippet_erd_display_relations_for_card",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_file_preview": {
+            "procedure_name": "dbo.sp_api_snippet_file_preview",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_guess_game": {
+            "procedure_name": "dbo.sp_api_snippet_guess_game",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_input_button": {
+            "procedure_name": "dbo.sp_api_snippet_input_button",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_iso_week": {
+            "procedure_name": "dbo.sp_api_snippet_iso_week",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_mail_card_files": {
+            "procedure_name": "dbo.sp_api_snippet_mail_card_files",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_mail_yourself": {
+            "procedure_name": "dbo.sp_api_snippet_mail_yourself",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_md_view": {
+            "procedure_name": "dbo.sp_api_snippet_md_view",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_multi_step_form": {
+            "procedure_name": "dbo.sp_api_snippet_multi_step_form",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_multi_step_table_sync": {
+            "procedure_name": "dbo.sp_api_snippet_multi_step_table_sync",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_paste_excel_to_temp_table": {
+            "procedure_name": "dbo.sp_api_snippet_paste_excel_to_temp_table",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_podcast": {
+            "procedure_name": "dbo.sp_api_snippet_podcast",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_quit_exit_button": {
+            "procedure_name": "dbo.sp_api_snippet_quit_exit_button",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_regex_split": {
+            "procedure_name": "dbo.sp_api_snippet_regex_split",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_report": {
+            "procedure_name": "dbo.sp_api_snippet_report",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_select_from_table": {
+            "procedure_name": "dbo.sp_api_snippet_select_from_table",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_sure_example": {
+            "procedure_name": "dbo.sp_api_snippet_sure_example",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_snippet_survey_example": {
+            "procedure_name": "dbo.sp_api_snippet_survey_example",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_soap_vies": {
+            "procedure_name": "dbo.sp_api_soap_vies",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_sql2pdf": {
+            "procedure_name": "dbo.sp_api_sql2pdf",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_start": {
+            "procedure_name": "dbo.sp_api_start",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_start_next_year": {
+            "procedure_name": "dbo.sp_api_start_next_year",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_start_prev_year": {
+            "procedure_name": "dbo.sp_api_start_prev_year",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_statusbar": {
+            "procedure_name": "dbo.sp_api_statusbar",
+            "related_procedures": {
+                "dbo.sp_api_toast": {
+                    "co_occurrence_count": 2
+                }
+            },
+            "relationship_count": 1
+        },
+        "dbo.sp_api_storage": {
+            "procedure_name": "dbo.sp_api_storage",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_sync_users_to_main_db": {
+            "procedure_name": "dbo.sp_api_sync_users_to_main_db",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_tls_info": {
+            "procedure_name": "dbo.sp_api_tls_info",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_toast": {
+            "procedure_name": "dbo.sp_api_toast",
+            "related_procedures": {
+                "dbo.sp_api_modal_get": {
+                    "co_occurrence_count": 4
+                },
+                "dbo.sp_api_modal_text": {
+                    "co_occurrence_count": 35
+                },
+                "dbo.sp_api_modal_button": {
+                    "co_occurrence_count": 33
+                },
+                "dbo.sp_api_modal_clear": {
+                    "co_occurrence_count": 34
+                },
+                "dbo.sp_api_modal_route": {
+                    "co_occurrence_count": 5
+                },
+                "dbo.sp_api_modal_input": {
+                    "co_occurrence_count": 23
+                },
+                "dbo.sp_api_report_generate": {
+                    "co_occurrence_count": 7
+                },
+                "dbo.sp_api_modal_alert": {
+                    "co_occurrence_count": 18
+                },
+                "dbo.sp_api_goto": {
+                    "co_occurrence_count": 11
+                },
+                "dbo.sp_api_modal_select": {
+                    "co_occurrence_count": 7
+                },
+                "dbo.sp_api_modal_date": {
+                    "co_occurrence_count": 6
+                },
+                "dbo.sp_api_modal_print": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_table": {
+                    "co_occurrence_count": 9
+                },
+                "dbo.sp_api_modal_post": {
+                    "co_occurrence_count": 4
+                },
+                "dbo.sp_api_modal_select_all_clear": {
+                    "co_occurrence_count": 10
+                },
+                "dbo.sp_api_modal_set": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_dispatch": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_select_table": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_statusbar": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_modal_modal": {
+                    "co_occurrence_count": 3
+                },
+                "dbo.sp_api_html_table": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_email": {
+                    "co_occurrence_count": 2
+                },
+                "dbo.sp_api_add_sql_task": {
+                    "co_occurrence_count": 2
+                }
+            },
+            "relationship_count": 23
+        },
+        "dbo.sp_api_toast_timer": {
+            "procedure_name": "dbo.sp_api_toast_timer",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_translate": {
+            "procedure_name": "dbo.sp_api_translate",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_translate_bulk": {
+            "procedure_name": "dbo.sp_api_translate_bulk",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_translate_languages": {
+            "procedure_name": "dbo.sp_api_translate_languages",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_update_dispatcher": {
+            "procedure_name": "dbo.sp_api_update_dispatcher",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_update_from_kernel": {
+            "procedure_name": "dbo.sp_api_update_from_kernel",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_update_react_client": {
+            "procedure_name": "dbo.sp_api_update_react_client",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_update_system_data": {
+            "procedure_name": "dbo.sp_api_update_system_data",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_validate_reducer": {
+            "procedure_name": "dbo.sp_api_validate_reducer",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_version_os": {
+            "procedure_name": "dbo.sp_api_version_os",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_whatsapp": {
+            "procedure_name": "dbo.sp_api_whatsapp",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_api_writeFile": {
+            "procedure_name": "dbo.sp_api_writeFile",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_admin_main_menu": {
+            "procedure_name": "dbo.sp_sys_admin_main_menu",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_card_field_settings": {
+            "procedure_name": "dbo.sp_sys_card_field_settings",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_card_help": {
+            "procedure_name": "dbo.sp_sys_card_help",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_card_lock_layouts": {
+            "procedure_name": "dbo.sp_sys_card_lock_layouts",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_card_modal_code": {
+            "procedure_name": "dbo.sp_sys_card_modal_code",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_children": {
+            "procedure_name": "dbo.sp_sys_children",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_choose_columns": {
+            "procedure_name": "dbo.sp_sys_choose_columns",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_choose_context_year": {
+            "procedure_name": "dbo.sp_sys_choose_context_year",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_compare_with_master": {
+            "procedure_name": "dbo.sp_sys_compare_with_master",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_convert_field_to_select": {
+            "procedure_name": "dbo.sp_sys_convert_field_to_select",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_convert_to_type_table": {
+            "procedure_name": "dbo.sp_sys_convert_to_type_table",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_data_set_info_mail": {
+            "procedure_name": "dbo.sp_sys_data_set_info_mail",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_delete": {
+            "procedure_name": "dbo.sp_sys_delete",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_edit_actions": {
+            "procedure_name": "dbo.sp_sys_edit_actions",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_edit_attributes": {
+            "procedure_name": "dbo.sp_sys_edit_attributes",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_edit_fields": {
+            "procedure_name": "dbo.sp_sys_edit_fields",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_escape": {
+            "procedure_name": "dbo.sp_sys_escape",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_excel_from_list": {
+            "procedure_name": "dbo.sp_sys_excel_from_list",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_field_info": {
+            "procedure_name": "dbo.sp_sys_field_info",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_file_check_all": {
+            "procedure_name": "dbo.sp_sys_file_check_all",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_file_delete": {
+            "procedure_name": "dbo.sp_sys_file_delete",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_file_delete_global_unused": {
+            "procedure_name": "dbo.sp_sys_file_delete_global_unused",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_file_delete_multi": {
+            "procedure_name": "dbo.sp_sys_file_delete_multi",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_file_delete_undo": {
+            "procedure_name": "dbo.sp_sys_file_delete_undo",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_file_download": {
+            "procedure_name": "dbo.sp_sys_file_download",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_file_preview": {
+            "procedure_name": "dbo.sp_sys_file_preview",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_file_to_base64": {
+            "procedure_name": "dbo.sp_sys_file_to_base64",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_file_to_text": {
+            "procedure_name": "dbo.sp_sys_file_to_text",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_file_upload": {
+            "procedure_name": "dbo.sp_sys_file_upload",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_file_upload_base64": {
+            "procedure_name": "dbo.sp_sys_file_upload_base64",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_file_upload_move_from_tmp": {
+            "procedure_name": "dbo.sp_sys_file_upload_move_from_tmp",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_file_upload_xml": {
+            "procedure_name": "dbo.sp_sys_file_upload_xml",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_filter_defaults_show_hide": {
+            "procedure_name": "dbo.sp_sys_filter_defaults_show_hide",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_filters_custom": {
+            "procedure_name": "dbo.sp_sys_filters_custom",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_find_fields": {
+            "procedure_name": "dbo.sp_sys_find_fields",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_get_translations": {
+            "procedure_name": "dbo.sp_sys_get_translations",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_gui_insert": {
+            "procedure_name": "dbo.sp_sys_gui_insert",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_history_table": {
+            "procedure_name": "dbo.sp_sys_history_table",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_identity_management": {
+            "procedure_name": "dbo.sp_sys_identity_management",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_import_action": {
+            "procedure_name": "dbo.sp_sys_import_action",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_insert_todo": {
+            "procedure_name": "dbo.sp_sys_insert_todo",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_json_to_sql": {
+            "procedure_name": "dbo.sp_sys_json_to_sql",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_list_classes": {
+            "procedure_name": "dbo.sp_sys_list_classes",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_list_editable": {
+            "procedure_name": "dbo.sp_sys_list_editable",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_menu_admin": {
+            "procedure_name": "dbo.sp_sys_menu_admin",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_menu_admin_add_cards": {
+            "procedure_name": "dbo.sp_sys_menu_admin_add_cards",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_menu_groups": {
+            "procedure_name": "dbo.sp_sys_menu_groups",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_menu_info": {
+            "procedure_name": "dbo.sp_sys_menu_info",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_menu_info_context": {
+            "procedure_name": "dbo.sp_sys_menu_info_context",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_menu_info_data_browser": {
+            "procedure_name": "dbo.sp_sys_menu_info_data_browser",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_menu_info_distinct_fields": {
+            "procedure_name": "dbo.sp_sys_menu_info_distinct_fields",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_menu_info_field_history": {
+            "procedure_name": "dbo.sp_sys_menu_info_field_history",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_menu_info_kill_processes": {
+            "procedure_name": "dbo.sp_sys_menu_info_kill_processes",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_menu_info_memory_usage": {
+            "procedure_name": "dbo.sp_sys_menu_info_memory_usage",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_menu_info_params": {
+            "procedure_name": "dbo.sp_sys_menu_info_params",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_menu_info_top_table_usage": {
+            "procedure_name": "dbo.sp_sys_menu_info_top_table_usage",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_menu_info_whatsapp": {
+            "procedure_name": "dbo.sp_sys_menu_info_whatsapp",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_menu_quick": {
+            "procedure_name": "dbo.sp_sys_menu_quick",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_menu_two_factor": {
+            "procedure_name": "dbo.sp_sys_menu_two_factor",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_modal_code_generator": {
+            "procedure_name": "dbo.sp_sys_modal_code_generator",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_modal_code_insert": {
+            "procedure_name": "dbo.sp_sys_modal_code_insert",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_modal_report_from_view": {
+            "procedure_name": "dbo.sp_sys_modal_report_from_view",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_modal_sql_import": {
+            "procedure_name": "dbo.sp_sys_modal_sql_import",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_modal_table_builder": {
+            "procedure_name": "dbo.sp_sys_modal_table_builder",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_modal_table_creator": {
+            "procedure_name": "dbo.sp_sys_modal_table_creator",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_modal_view_builder": {
+            "procedure_name": "dbo.sp_sys_modal_view_builder",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_modal_view_builder_recursive": {
+            "procedure_name": "dbo.sp_sys_modal_view_builder_recursive",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_model_diff": {
+            "procedure_name": "dbo.sp_sys_model_diff",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_parent_cards": {
+            "procedure_name": "dbo.sp_sys_parent_cards",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_performance_listview": {
+            "procedure_name": "dbo.sp_sys_performance_listview",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_performance_query_store": {
+            "procedure_name": "dbo.sp_sys_performance_query_store",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_pick_from_list": {
+            "procedure_name": "dbo.sp_sys_pick_from_list",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_refresh_all_views": {
+            "procedure_name": "dbo.sp_sys_refresh_all_views",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_restore_backup": {
+            "procedure_name": "dbo.sp_sys_restore_backup",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_save_sorting_order": {
+            "procedure_name": "dbo.sp_sys_save_sorting_order",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_search_all": {
+            "procedure_name": "dbo.sp_sys_search_all",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_select_text": {
+            "procedure_name": "dbo.sp_sys_select_text",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_set_workdate": {
+            "procedure_name": "dbo.sp_sys_set_workdate",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_switch_role": {
+            "procedure_name": "dbo.sp_sys_switch_role",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_switch_role_setter": {
+            "procedure_name": "dbo.sp_sys_switch_role_setter",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_sync_system_cards": {
+            "procedure_name": "dbo.sp_sys_sync_system_cards",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_table_size": {
+            "procedure_name": "dbo.sp_sys_table_size",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_toggle_isam_search": {
+            "procedure_name": "dbo.sp_sys_toggle_isam_search",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_translate": {
+            "procedure_name": "dbo.sp_sys_translate",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_user_settings": {
+            "procedure_name": "dbo.sp_sys_user_settings",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_view_performance": {
+            "procedure_name": "dbo.sp_sys_view_performance",
+            "related_procedures": {},
+            "relationship_count": 0
+        },
+        "dbo.sp_sys_workflow": {
+            "procedure_name": "dbo.sp_sys_workflow",
+            "related_procedures": {},
+            "relationship_count": 0
+        }
+    },
+    "relationship_summary": [
+        {
+            "procedure": "dbo.sp_api_modal_text",
+            "connection_count": 26
+        },
+        {
+            "procedure": "dbo.sp_api_modal_button",
+            "connection_count": 24
+        },
+        {
+            "procedure": "dbo.sp_api_toast",
+            "connection_count": 23
+        },
+        {
+            "procedure": "dbo.sp_api_modal_clear",
+            "connection_count": 19
+        },
+        {
+            "procedure": "dbo.sp_api_modal_input",
+            "connection_count": 14
+        },
+        {
+            "procedure": "dbo.sp_api_modal_table",
+            "connection_count": 14
+        },
+        {
+            "procedure": "dbo.sp_api_goto",
+            "connection_count": 12
+        },
+        {
+            "procedure": "dbo.sp_api_modal_date",
+            "connection_count": 12
+        },
+        {
+            "procedure": "dbo.sp_api_modal_post",
+            "connection_count": 11
+        },
+        {
+            "procedure": "dbo.sp_api_modal_alert",
+            "connection_count": 10
+        }
+    ]
+}

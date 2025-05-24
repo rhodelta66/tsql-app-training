@@ -1,0 +1,45 @@
+{
+    "metadata": {
+        "generation_date": "2025-05-24T21:44:07.552895",
+        "patterns_used": 3,
+        "total_examples": 3
+    },
+    "examples": [
+        {
+            "example_id": "pattern_example_1",
+            "pattern_description": "Single framework procedure call",
+            "complexity_level": "beginner",
+            "occurrence_frequency": 67,
+            "example_script": "-- Training Example: Single framework procedure call\n-- Pattern Frequency: 67 occurrences\n\n-- Parameter Setup\nDECLARE @text nvarchar = N'Sample Value';\nDECLARE @class nvarchar = N'Sample Value';\nDECLARE @translate bit = 1;\n\n-- Framework procedure call\nEXEC dbo.sp_api_toast;",
+            "key_procedures": [
+                "dbo.sp_api_toast",
+                "dbo.sp_api_modal_text",
+                "dbo.sp_api_foreach_id"
+            ],
+            "teaching_notes": "This pattern appears 67 times in real applications"
+        },
+        {
+            "example_id": "pattern_example_2",
+            "pattern_description": "Single framework procedure call with validation",
+            "complexity_level": "intermediate",
+            "occurrence_frequency": 6,
+            "example_script": "-- Training Example: Single framework procedure call with validation\n-- Pattern Frequency: 6 occurrences\n\n-- Parameter Setup\nDECLARE @text nvarchar = N'Sample Value';\nDECLARE @class nvarchar = N'Sample Value';\nDECLARE @translate bit = 1;\n\n-- Framework procedure call\nEXEC dbo.sp_api_modal_text;",
+            "key_procedures": [
+                "dbo.sp_api_modal_text",
+                "dbo.sp_api_modal_modal"
+            ],
+            "teaching_notes": "This pattern appears 6 times in real applications"
+        },
+        {
+            "example_id": "pattern_example_3",
+            "pattern_description": "Single framework procedure call with error handling",
+            "complexity_level": "beginner",
+            "occurrence_frequency": 2,
+            "example_script": "-- Training Example: Single framework procedure call with error handling\n-- Pattern Frequency: 2 occurrences\n\n-- Parameter Setup\nDECLARE @text nvarchar = N'Sample Value';\nDECLARE @class nvarchar = N'Sample Value';\nDECLARE @translate bit = 1;\n\n-- Error handling pattern\nBEGIN TRY\n\n    -- Framework procedure call\n    EXEC dbo.sp_api_modal_text;\n\nEND TRY\nBEGIN CATCH\n    PRINT 'Error occurred: ' + ERROR_MESSAGE();\n    THROW;\nEND CATCH;",
+            "key_procedures": [
+                "dbo.sp_api_modal_text"
+            ],
+            "teaching_notes": "This pattern appears 2 times in real applications"
+        }
+    ]
+}
