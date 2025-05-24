@@ -15,15 +15,15 @@ class ValidationExampleGenerator(ExampleGenerator):
         # Generate script with validation checks
         params = []
         for param in proc.get('parameters', []):
-            value = self.generate_sample_value(param['name'], param['type'])
+            value = self.generate_sample_value(param['name'], param.get('type_from_sys', param.get('type_from_def', 'nvarchar')))
             params.append(f"@{param['name']} = {value}")
         
         # Add validation checks
         validation_checks = []
         for param in proc.get('parameters', []):
-            if 'nvarchar' in param['type'].lower():
+            if 'nvarchar' in param.get('type_from_sys', param.get('type_from_def', 'nvarchar')).lower():
                 validation_checks.append(f"IF LEN(@{param['name']}) > 0")
-            elif 'int' in param['type'].lower():
+            elif 'int' in param.get('type_from_sys', param.get('type_from_def', 'nvarchar')).lower():
                 validation_checks.append(f"IF @{param['name']} > 0")
         
         validation_script = "\n    AND ".join(validation_checks)
@@ -42,15 +42,15 @@ class ValidationExampleGenerator(ExampleGenerator):
         # Generate script with validation checks
         params = []
         for param in proc.get('parameters', []):
-            value = self.generate_sample_value(param['name'], param['type'])
+            value = self.generate_sample_value(param['name'], param.get('type_from_sys', param.get('type_from_def', 'nvarchar')))
             params.append(f"@{param['name']} = {value}")
         
         # Add validation checks
         validation_checks = []
         for param in proc.get('parameters', []):
-            if 'nvarchar' in param['type'].lower():
+            if 'nvarchar' in param.get('type_from_sys', param.get('type_from_def', 'nvarchar')).lower():
                 validation_checks.append(f"IF LEN(@{param['name']}) > 0")
-            elif 'int' in param['type'].lower():
+            elif 'int' in param.get('type_from_sys', param.get('type_from_def', 'nvarchar')).lower():
                 validation_checks.append(f"IF @{param['name']} > 0")
         
         validation_script = "\n    AND ".join(validation_checks)

@@ -725,7 +725,7 @@ if __name__ == "__main__":
     if not script_args_global.refresh_action_scripts: corpus_loaded = load_memory_file(ACTION_SCRIPTS_CORPUS_FILE, _action_scripts_corpus_cache)
     current_action_script_corpus = _action_scripts_corpus_cache.get("scripts", [])
     if not current_action_script_corpus or script_args_global.refresh_action_scripts:
-        mca, maa = int(os.getenv('MAX_CARD_ACTIONS_TO_CORPUS', '250')), int(os.getenv('MAX_API_ACTIONS_TO_CORPUS', '150'))
+        mca, maa = int(os.getenv('MAX_CARD_ACTIONS_TO_CORPUS', '500')), int(os.getenv('MAX_API_ACTIONS_TO_CORPUS', '500'))
         print(f"ACTION_SCRIPTS_CORPUS: Fetching up to {mca} card actions and {maa} API actions...")
         current_action_script_corpus = (get_action_scripts_source('api_card_actions', ['unparsed_sql', 'sql_script'], script_args_global, max_scripts=mca) or []) + \
                                        (get_action_scripts_source('api_actions', ['sql_script', 'unparsed_sql'], script_args_global, max_scripts=maa) or [])
@@ -744,82 +744,14 @@ if __name__ == "__main__":
                 if i < limit_print_sample: analyzed_script_patterns_sample.append({**script_info, "analysis_findings": analysis_result, "script_snippet": sql_text[:300] + "..." if sql_text and len(sql_text) > 300 else sql_text})
         needs_cooccurrence_update = script_args_global.rediscover_api or script_args_global.refresh_action_scripts or not api_loaded or not corpus_loaded or \
                                    (current_framework_api and (not current_framework_api[0].get('co_occurrence_stats') if current_framework_api else False) )
-        if needs_cooccurrence_update and all_script_findings_for_cooccurrence: update_co_occurrence_stats(current_framework_api, all_script_findings_for_cooccurrence)
-		# Generate simple training examples
-if current_framework_api:
-    # Generate framework training materials
-    if TRAINING_AVAILABLE:
-        try:
-            print("\nFRAMEWORK_TRAINING: Starting training data generation...")
-            
-            # Initialize training generator
-            training_generator = TrainingExampleGenerator(current_framework_api)
-            
-            # Redirect output to a file to avoid console encoding issues
-            import sys
-            import io
-            
-            # Save original stdout
-            original_stdout = sys.stdout
+        if needs_cooccurrence_update and all_script_findings_for_cooccurrence: 
+            relationships = update_co_occurrence_stats(current_framework_api, all_script_findings_for_cooccurrence)
+        # Generate simple training examples
+    if current_framework_api:
+        # Generate framework training materials
+        if TRAINING_AVAILABLE:
             try:
-                # Create a file for output
-                output_file = open("training_output/training_generation_output.txt", "w", encoding="utf-8")
-                # Redirect stdout to file
-                sys.stdout = output_file
-                
-                # Generate training materials
-                if TRAINING_AVAILABLE:
-                    # Get relationships data from co-occurrence stats
-                    relationships = update_co_occurrence_stats(current_framework_api, all_script_findings_for_cooccurrence)
-                    
-                    # Prepare usage patterns from findings
-                    usage_patterns = {
-                        "patterns": [],
-                        "metadata": {
-                            "analysis_date": datetime.now().isoformat(),
-                            "scripts_analyzed": len(all_script_findings_for_cooccurrence)
-                        }
-                    }
-                    
-                    # Add patterns from findings
-                    for finding in all_script_findings_for_cooccurrence:
-                        findings = finding.get("analysis_findings", {})
-                        if findings:
-                            usage_patterns["patterns"].append({
-                                "description": findings.get("pattern_description", "Unknown pattern"),
-                                "signature": findings.get("signature", []),
-                                "common_procedures": findings.get("common_procedures", {}),
-                                "occurrence_count": 1  # We'll count occurrences later
-                            })
-                    
-                    # Count occurrences
-                    pattern_counts = Counter({
-                        json.dumps(pattern, sort_keys=True): 1 
-                        for pattern in usage_patterns["patterns"]
-                    })
-                    
-                    # Update patterns with actual counts
-                    for pattern in usage_patterns["patterns"]:
-                        pattern_key = json.dumps(pattern, sort_keys=True)
-                        pattern["occurrence_count"] = pattern_counts[pattern_key]
-                    
-                    # Generate training materials with synthetic examples
-                    print("\nFRAMEWORK_TRAINING: Generating training materials...")
-                    results = training_generator.generate_examples(
-                        usage_patterns, 
-                        relationships,
-                        action_scripts_corpus=current_action_script_corpus
-                    )
-                    
-                    # Save results to file
-                    output_dir = "training_output"
-                    os.makedirs(output_dir, exist_ok=True)
-                    output_file = os.path.join(output_dir, "training_materials.json")
-                    
-                    with open(output_file, "w", encoding="utf-8") as f:
-                        json.dump(results, f, indent=2, ensure_ascii=False)
-                    
-                    print(f"\nFRAMEWORK_TRAINING: Training materials saved to {output_file}")
+                print("\nFRAMEWORK_TRAINING: Starting training data generation...")
                     
                     # If testing a specific procedure, print its details
                     if script_args_global.test_sp:

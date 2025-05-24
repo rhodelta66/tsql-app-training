@@ -14,7 +14,7 @@ class ErrorHandlingExampleGenerator(ExampleGenerator):
         # Generate script with parameters
         params = []
         for param in proc.get('parameters', []):
-            value = self.generate_sample_value(param['name'], param['type'])
+            value = self.generate_sample_value(param['name'], param.get('type_from_sys', param.get('type_from_def', 'nvarchar')))
             params.append(f"@{param['name']} = {value}")
         
         # Create example with proper structure
@@ -31,7 +31,7 @@ class ErrorHandlingExampleGenerator(ExampleGenerator):
         # Generate script with parameters
         params = []
         for param in proc.get('parameters', []):
-            value = self.generate_sample_value(param['name'], param['type'])
+            value = self.generate_sample_value(param['name'], param.get('type_from_sys', param.get('type_from_def', 'nvarchar')))
             params.append(f"@{param['name']} = {value}")
         
         return f"BEGIN TRY\n    EXEC {proc['schema_name']}.{proc['object_name']} {', '.join(params)}\nEND TRY\nBEGIN CATCH\n    PRINT 'Error occurred: ' + ERROR_MESSAGE();\n    THROW;\nEND CATCH;"

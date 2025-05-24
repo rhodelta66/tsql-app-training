@@ -14,7 +14,7 @@ class SimpleExampleGenerator(ExampleGenerator):
         # Generate script with parameters
         params = []
         for param in proc.get('parameters', []):
-            value = self.generate_sample_value(param['name'], param['type'])
+            value = self.generate_sample_value(param['name'], param.get('type_from_sys', param.get('type_from_def', 'nvarchar')))
             params.append(f"@{param['name']} = {value}")
         
         # Create example with proper structure
@@ -30,5 +30,10 @@ class SimpleExampleGenerator(ExampleGenerator):
     
     def generate_simple_script(self, proc: Dict, patterns: Dict) -> str:
         """Generate a simple script for a single procedure."""
-        # Implementation remains the same as before
-        pass
+        # Generate script with parameters
+        params = []
+        for param in proc.get('parameters', []):
+            value = self.generate_sample_value(param['name'], param.get('type_from_sys', param.get('type_from_def', 'nvarchar')))
+            params.append(f"@{param['name']} = {value}")
+        
+        return f"EXEC {proc['schema_name']}.{proc['object_name']} {', '.join(params)}"

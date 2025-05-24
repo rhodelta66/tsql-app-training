@@ -1,47 +1,28 @@
 from generators.synthetic_training_generator import generate_all_training_materials
 
-# Sample framework API details
+import json
+
+# Load framework API details from JSON file
+with open('../framework_api_details.json', 'r', encoding='utf-8') as f:
+    api_data = json.load(f)
+    framework_api_details = api_data['api_objects']
+
+# Filter to get only stored procedures
 framework_api_details = [
-    {
-        'schema_name': 'dbo',
-        'object_name': 'sp_user_create',
-        'object_type_short': 'P',
-        'parameters': [
-            {'name': '@username', 'type': 'nvarchar(50)'}
-        ],
-        'complexity': 'simple'
-    },
-    {
-        'schema_name': 'dbo',
-        'object_name': 'sp_user_update',
-        'object_type_short': 'P',
-        'parameters': [
-            {'name': '@user_id', 'type': 'int'},
-            {'name': '@new_email', 'type': 'nvarchar(100)'}
-        ],
-        'complexity': 'simple'
-    },
-    {
-        'schema_name': 'dbo',
-        'object_name': 'sp_user_transfer',
-        'object_type_short': 'P',
-        'parameters': [
-            {'name': '@user_id', 'type': 'int'},
-            {'name': '@old_department', 'type': 'int'},
-            {'name': '@new_department', 'type': 'int'},
-            {'name': '@transfer_date', 'type': 'datetime'}
-        ],
-        'complexity': 'complex'
-    }
+    proc for proc in framework_api_details
+    if proc.get('object_type_short') == 'P'
 ]
 
-# Sample script patterns
-script_patterns = {
-    'simple_patterns': [
-        'EXEC dbo.sp_user_create @username = @username',
-        'EXEC dbo.sp_user_update @user_id = @user_id, @new_email = @new_email'
-    ]
-}
+# Generate script patterns from real usage examples
+script_patterns = {}
+for proc in framework_api_details:
+    if proc.get('real_usage_examples'):
+        patterns = []
+        for ex in proc['real_usage_examples']:
+            if 'sql_source' in ex:
+                patterns.append(ex['sql_source'])
+        if patterns:
+            script_patterns[proc['object_name']] = patterns
 
 # Sample relationships
 relationships = {

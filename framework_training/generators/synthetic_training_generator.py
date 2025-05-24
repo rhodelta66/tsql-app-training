@@ -1,5 +1,6 @@
 from typing import Dict, List, Optional
 from datetime import datetime
+import re
 
 from .pattern_analyzer.pattern_extractor import analyze_script_patterns
 from .pattern_analyzer.pattern_normalizer import normalize_patterns

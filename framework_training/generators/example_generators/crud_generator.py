@@ -38,7 +38,7 @@ class CRUDExampleGenerator(ExampleGenerator):
         """Generate a CRUD-specific script."""
         params = []
         for param in proc.get('parameters', []):
-            value = self.generate_sample_value(param['name'], param['type'])
+            value = self.generate_sample_value(param['name'], param.get('type_from_sys', param.get('type_from_def', 'nvarchar')))
             params.append(f"@{param['name']} = {value}")
         
         # Add appropriate CRUD pattern
